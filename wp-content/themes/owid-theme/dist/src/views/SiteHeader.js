@@ -66,6 +66,8 @@ exports.SiteHeader = function (props) {
                 React.createElement("li", { className: 'end-link' },
                     React.createElement("a", { href: '/about' }, "About")),
                 React.createElement("li", { className: 'end-link' },
+                    React.createElement("a", { href: '/teaching' }, "Teaching")),
+                React.createElement("li", { className: 'end-link' },
                     React.createElement("a", { href: '/support' }, "Donate")))),
         React.createElement("div", { id: "search-dropdown", className: "mobile" },
             React.createElement("form", { id: "search-nav", action: "https://google.com/search", method: "GET" },

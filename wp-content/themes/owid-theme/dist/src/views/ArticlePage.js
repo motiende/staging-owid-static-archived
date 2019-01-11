@@ -7,7 +7,6 @@ var CitationMeta_1 = require("./CitationMeta");
 var SiteHeader_1 = require("./SiteHeader");
 var SiteFooter_1 = require("./SiteFooter");
 var formatting_1 = require("../formatting");
-var urlSlug = require('url-slug');
 var _ = require("lodash");
 exports.ArticlePage = function (props) {
     var entries = props.entries, post = props.post, formattingOptions = props.formattingOptions;

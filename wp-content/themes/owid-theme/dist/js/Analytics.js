@@ -4,7 +4,7 @@ var Analytics = /** @class */ (function () {
     function Analytics() {
     }
     Analytics.logEvent = function (name, props) {
-        props = Object.assign({}, { location: { href: window.location.href, pathname: window.location.pathname } }, props);
+        props = Object.assign({}, { context: { pageHref: window.location.href, pagePath: window.location.pathname, pageTitle: document.title.replace(/ - [^-]+/, '') } }, props);
         return new Promise(function (resolve, reject) {
             if (!window.amplitude) {
                 console.log(name, props);

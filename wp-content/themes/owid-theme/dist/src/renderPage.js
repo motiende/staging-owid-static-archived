@@ -36,10 +36,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var wpdb = require("./wpdb");
+var grapherDb = require("./grapherDb");
 var ArticlePage_1 = require("./views/ArticlePage");
 var BlogPostPage_1 = require("./views/BlogPostPage");
 var BlogIndexPage_1 = require("./views/BlogIndexPage");
 var FrontPage_1 = require("./views/FrontPage");
+var ChartsIndexPage_1 = require("./views/ChartsIndexPage");
 var SubscribePage_1 = require("./views/SubscribePage");
 var React = require("react");
 var ReactDOMServer = require("react-dom/server");
@@ -57,9 +59,40 @@ function renderToHtmlPage(element) {
     return "<!doctype html>" + ReactDOMServer.renderToStaticMarkup(element);
 }
 exports.renderToHtmlPage = renderToHtmlPage;
+function renderChartsPage() {
+    return __awaiter(this, void 0, void 0, function () {
+        var entries, chartItems;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, wpdb.getEntriesByCategory()];
+                case 1:
+                    entries = _a.sent();
+                    return [4 /*yield*/, grapherDb.query("SELECT config->>\"$.slug\" AS slug, config->>\"$.title\" AS title FROM charts")];
+                case 2:
+                    chartItems = _a.sent();
+                    return [2 /*return*/, renderToHtmlPage(React.createElement(ChartsIndexPage_1.ChartsIndexPage, { entries: entries, chartItems: chartItems }))];
+            }
+        });
+    });
+}
+exports.renderChartsPage = renderChartsPage;
+function renderPageBySlug(slug) {
+    return __awaiter(this, void 0, void 0, function () {
+        var rows;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, wpdb.query("SELECT * FROM wp_posts AS post WHERE post_name=?", [slug])];
+                case 1:
+                    rows = _a.sent();
+                    return [2 /*return*/, renderPage(rows[0])];
+            }
+        });
+    });
+}
+exports.renderPageBySlug = renderPageBySlug;
 function renderPageById(id, isPreview) {
     return __awaiter(this, void 0, void 0, function () {
-        var rows, post, entries, $, grapherUrls, exportsByUrl, formattingOptions, formatted;
+        var rows;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -72,27 +105,38 @@ function renderPageById(id, isPreview) {
                 case 3:
                     rows = _a.sent();
                     _a.label = 4;
-                case 4: return [4 /*yield*/, wpdb.getFullPost(rows[0])];
-                case 5:
+                case 4: return [2 /*return*/, renderPage(rows[0])];
+            }
+        });
+    });
+}
+exports.renderPageById = renderPageById;
+function renderPage(postRow) {
+    return __awaiter(this, void 0, void 0, function () {
+        var post, entries, $, grapherUrls, exportsByUrl, formattingOptions, formatted;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, wpdb.getFullPost(postRow)];
+                case 1:
                     post = _a.sent();
                     return [4 /*yield*/, wpdb.getEntriesByCategory()];
-                case 6:
+                case 2:
                     entries = _a.sent();
                     $ = cheerio.load(post.content);
                     grapherUrls = $("iframe").toArray().filter(function (el) { return (el.attribs['src'] || '').match(/\/grapher\//); }).map(function (el) { return el.attribs['src']; });
                     return [4 /*yield*/, grapherUtil_1.bakeGrapherUrls(grapherUrls, { silent: true })];
-                case 7:
+                case 3:
                     _a.sent();
                     return [4 /*yield*/, grapherUtil_1.getGrapherExportsByUrl()
                         // Extract formatting options from post HTML comment (if any)
                     ];
-                case 8:
+                case 4:
                     exportsByUrl = _a.sent();
                     formattingOptions = formatting_1.extractFormattingOptions(post.content);
                     return [4 /*yield*/, formatting_1.formatPost(post, formattingOptions, exportsByUrl)];
-                case 9:
+                case 5:
                     formatted = _a.sent();
-                    if (rows[0].post_type === 'post')
+                    if (postRow.post_type === 'post')
                         return [2 /*return*/, renderToHtmlPage(React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted, formattingOptions: formattingOptions }))];
                     else
                         return [2 /*return*/, renderToHtmlPage(React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted, formattingOptions: formattingOptions }))];
@@ -101,7 +145,6 @@ function renderPageById(id, isPreview) {
         });
     });
 }
-exports.renderPageById = renderPageById;
 function renderFrontPage() {
     return __awaiter(this, void 0, void 0, function () {
         var postRows, permalinks, posts, entries;

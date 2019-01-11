@@ -2,7 +2,7 @@ declare var window: any
 
 export class Analytics {
     static logEvent(name: string, props?: any): Promise<void> {
-        props = Object.assign({}, { location: { href: window.location.href, pathname: window.location.pathname } }, props)
+        props = Object.assign({}, { context: { pageHref: window.location.href, pagePath: window.location.pathname, pageTitle: document.title.replace(/ - [^-]+/, '') } }, props)
 
         return new Promise((resolve, reject) => {
             if (!window.amplitude) {

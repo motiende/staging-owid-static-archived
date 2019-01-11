@@ -221,22 +221,28 @@ var WordpressBaker = /** @class */ (function () {
     };
     WordpressBaker.prototype.bakeSpecialPages = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var _a, _b, _c, _d;
-            return __generator(this, function (_e) {
-                switch (_e.label) {
+            var _a, _b, _c, _d, _e, _f;
+            return __generator(this, function (_g) {
+                switch (_g.label) {
                     case 0:
                         _a = this.stageWrite;
                         _b = [BAKED_DIR + "/index.html"];
                         return [4 /*yield*/, renderPage_1.renderFrontPage()];
-                    case 1: return [4 /*yield*/, _a.apply(this, _b.concat([_e.sent()]))];
+                    case 1: return [4 /*yield*/, _a.apply(this, _b.concat([_g.sent()]))];
                     case 2:
-                        _e.sent();
+                        _g.sent();
                         _c = this.stageWrite;
                         _d = [BAKED_DIR + "/subscribe.html"];
                         return [4 /*yield*/, renderPage_1.renderSubscribePage()];
-                    case 3: return [4 /*yield*/, _c.apply(this, _d.concat([_e.sent()]))];
+                    case 3: return [4 /*yield*/, _c.apply(this, _d.concat([_g.sent()]))];
                     case 4:
-                        _e.sent();
+                        _g.sent();
+                        _e = this.stageWrite;
+                        _f = [BAKED_DIR + "/charts.html"];
+                        return [4 /*yield*/, renderPage_1.renderChartsPage()];
+                    case 5: return [4 /*yield*/, _e.apply(this, _f.concat([_g.sent()]))];
+                    case 6:
+                        _g.sent();
                         return [2 /*return*/];
                 }
             });

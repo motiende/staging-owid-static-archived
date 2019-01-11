@@ -53,4 +53,30 @@ devServer.get('/', function (req, res) { return __awaiter(_this, void 0, void 0,
         }
     });
 }); });
+devServer.get('/charts', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
+    var _a, _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _b = (_a = res).send;
+                return [4 /*yield*/, renderPage_1.renderChartsPage()];
+            case 1:
+                _b.apply(_a, [_c.sent()]);
+                return [2 /*return*/];
+        }
+    });
+}); });
+devServer.get('/:slug', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
+    var _a, _b;
+    return __generator(this, function (_c) {
+        switch (_c.label) {
+            case 0:
+                _b = (_a = res).send;
+                return [4 /*yield*/, renderPage_1.renderPageBySlug(req.params.slug)];
+            case 1:
+                _b.apply(_a, [_c.sent()]);
+                return [2 /*return*/];
+        }
+    });
+}); });
 //# sourceMappingURL=devServer.js.map
