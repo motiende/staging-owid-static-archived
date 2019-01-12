@@ -20,13 +20,15 @@ var ChartSearcher = /** @class */ (function () {
         this.chartItems = [];
         this.chartItemsByTitle = {};
         this.results = [];
+        this.sections = [];
         this.query = "";
         this.searchInput = document.querySelector(".chartsSearchInput");
-        this.ul = document.querySelector(".ChartsIndexPage main ul");
+        this.sections = Array.from(document.querySelectorAll(".ChartsIndexPage main section"));
         var lis = Array.from(document.querySelectorAll(".ChartsIndexPage main li"));
         this.chartItems = lis.map(function (li) { return ({
             title: li.textContent.replace(/₂/g, '2'),
-            li: li
+            li: li,
+            ul: li.closest('ul')
         }); });
         this.chartItemsByTitle = _.keyBy(this.chartItems, 'title');
         this.strings = this.chartItems.map(function (c) { return fuzzysort.prepare(c.title); });
@@ -55,50 +57,64 @@ var ChartSearcher = /** @class */ (function () {
     ChartSearcher.prototype.onSearchInput = function () {
         this.query = this.searchInput.value;
     };
-    ChartSearcher.prototype.onKeydown = function (ev) {
+    /*@action.bound onKeydown(ev: KeyboardEvent) {
         if (ev.keyCode === 13 && this.query && this.searchResults.length) {
-            var href = this.chartItemsByTitle[this.searchResults[0].target].li.children[0].getAttribute('href');
-            window.location.assign(href);
+            const href = this.chartItemsByTitle[this.searchResults[0].target].li.children[0].getAttribute('href') as string
+            window.location.assign(href)
         }
-    };
+    }*/
     ChartSearcher.prototype.render = function () {
         history.replaceState(null, document.title, window.location.pathname + (this.query ? "#search=" + encodeHashSafe(this.query) : ""));
         if (!this.query) {
-            for (var _i = 0, _a = this.chartItems; _i < _a.length; _i++) {
-                var c = _a[_i];
-                this.ul.append(c.li);
-                c.li.style.display = 'block';
+            for (var _i = 0, _a = this.sections; _i < _a.length; _i++) {
+                var section = _a[_i];
+                section.style.display = null;
+            }
+            for (var _b = 0, _c = this.chartItems; _b < _c.length; _b++) {
+                var c = _c[_b];
+                c.ul.append(c.li);
+                c.li.style.display = null;
                 c.li.children[0].innerHTML = c.title;
             }
             return;
         }
-        for (var i = this.searchResults.length - 1; i >= 0; i--) {
-            var c = this.chartItemsByTitle[this.searchResults[i].target];
-            this.ul.prepend(c.li);
-        }
-        for (var _b = 0, _c = this.chartItems; _b < _c.length; _b++) {
-            var c = _c[_b];
+        /*for (let i = this.searchResults.length-1; i >= 0; i--) {
+            const c = this.chartItemsByTitle[this.searchResults[i].target]
+            c.ul.prepend(c.li)
+        }*/
+        for (var _d = 0, _e = this.chartItems; _d < _e.length; _d++) {
+            var c = _e[_d];
             var res = this.resultsByTitle[c.title];
             if (!res) {
                 c.li.style.display = 'none';
             }
             else {
-                c.li.style.display = 'block';
+                c.li.style.display = null;
                 c.li.children[0].innerHTML = fuzzysort.highlight(res);
+            }
+        }
+        // Ensure tag headings are only shown if they have charts under them
+        for (var _f = 0, _g = this.sections; _f < _g.length; _f++) {
+            var section = _g[_f];
+            if (!Array.from(section.querySelectorAll("li")).some(function (li) { return li.style.display !== 'none'; })) {
+                section.style.display = 'none';
+            }
+            else {
+                section.style.display = null;
             }
         }
     };
     ChartSearcher.prototype.run = function () {
         var _this = this;
         this.searchInput.addEventListener('input', this.onSearchInput);
-        this.searchInput.addEventListener('keydown', this.onKeydown);
-        this.searchInput.focus();
+        //this.searchInput.addEventListener('keydown', this.onKeydown)
         mobx_1.autorun(function () { return _this.render(); });
         var m = window.location.hash.match(/search=(.+)/);
         if (m) {
             this.searchInput.value = decodeHashSafe(m[1]);
         }
         this.query = this.searchInput.value;
+        this.searchInput.focus();
     };
     __decorate([
         mobx_1.observable
@@ -115,9 +131,6 @@ var ChartSearcher = /** @class */ (function () {
     __decorate([
         mobx_1.action.bound
     ], ChartSearcher.prototype, "onSearchInput", null);
-    __decorate([
-        mobx_1.action.bound
-    ], ChartSearcher.prototype, "onKeydown", null);
     __decorate([
         mobx_1.action.bound
     ], ChartSearcher.prototype, "run", null);

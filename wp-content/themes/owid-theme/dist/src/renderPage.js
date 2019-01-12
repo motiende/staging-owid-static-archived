@@ -61,15 +61,33 @@ function renderToHtmlPage(element) {
 exports.renderToHtmlPage = renderToHtmlPage;
 function renderChartsPage() {
     return __awaiter(this, void 0, void 0, function () {
-        var entries, chartItems;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
+        var entries, chartItems, chartTags, _i, chartItems_1, c, chartsById, _a, chartTags_1, ct, c;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
                 case 0: return [4 /*yield*/, wpdb.getEntriesByCategory()];
                 case 1:
-                    entries = _a.sent();
-                    return [4 /*yield*/, grapherDb.query("SELECT config->>\"$.slug\" AS slug, config->>\"$.title\" AS title FROM charts")];
+                    entries = _b.sent();
+                    return [4 /*yield*/, grapherDb.query("SELECT id, config->>\"$.slug\" AS slug, config->>\"$.title\" AS title FROM charts")];
                 case 2:
-                    chartItems = _a.sent();
+                    chartItems = _b.sent();
+                    return [4 /*yield*/, grapherDb.query("\n        SELECT ct.chartId, ct.tagId, t.name as tagName, t.parentId as tagParentId FROM chart_tags ct\n        JOIN charts c ON c.id=ct.chartId\n        JOIN tags t ON t.id=ct.tagId\n    ")];
+                case 3:
+                    chartTags = _b.sent();
+                    for (_i = 0, chartItems_1 = chartItems; _i < chartItems_1.length; _i++) {
+                        c = chartItems_1[_i];
+                        c.tags = [];
+                    }
+                    chartsById = _.keyBy(chartItems, function (c) { return c.id; });
+                    for (_a = 0, chartTags_1 = chartTags; _a < chartTags_1.length; _a++) {
+                        ct = chartTags_1[_a];
+                        console.log(ct.tagParentId);
+                        // XXX hardcoded filtering to public parent tags
+                        if ([1515, 1507, 1513, 1504, 1502, 1509, 1506, 1501, 1514, 1511, 1500, 1503, 1505, 1508, 1512, 1510].indexOf(ct.tagParentId) === -1)
+                            continue;
+                        c = chartsById[ct.chartId];
+                        if (c)
+                            c.tags.push({ id: ct.tagId, name: ct.tagName });
+                    }
                     return [2 /*return*/, renderToHtmlPage(React.createElement(ChartsIndexPage_1.ChartsIndexPage, { entries: entries, chartItems: chartItems }))];
             }
         });
