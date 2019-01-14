@@ -92,7 +92,9 @@ var WordpressBaker = /** @class */ (function () {
                             "/grapher/view/* /grapher/:splat 301",
                             // Main grapher chart urls are proxied through to separate repo
                             "/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200",
-                            "/slides/* https://slides.ourworldindata.org/:splat 301"
+                            "/slides/* https://slides.ourworldindata.org/:splat 301",
+                            // Redirect search to google sitesearch
+                            "/search q=:q https://google.com/search?sitesearch=ourworldindata.org&q=:q 302"
                         ];
                         return [4 /*yield*/, wpdb.query("SELECT url, action_data, action_code FROM wp_redirection_items")];
                     case 1:

@@ -37,7 +37,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = require("express");
+var express = require("express");
 var renderPage_1 = require("./renderPage");
+var settings_1 = require("./settings");
 var beforeWebpack = express_1.Router();
 exports.beforeWebpack = beforeWebpack;
 beforeWebpack.get('/', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
@@ -68,6 +70,7 @@ beforeWebpack.get('/charts', function (req, res) { return __awaiter(_this, void 
 }); });
 var afterWebpack = express_1.Router();
 exports.afterWebpack = afterWebpack;
+afterWebpack.use(express.static(settings_1.WORDPRESS_DIR));
 afterWebpack.get('/:slug', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
     var _a, _b;
     return __generator(this, function (_c) {

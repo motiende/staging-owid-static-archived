@@ -199,6 +199,10 @@ function formatWordpressPost(post, html, formattingOptions, grapherExports) {
                         }
                         src = el.attribs['src'] || "";
                         upload = uploadDex.get(path.basename(src));
+                        // Add alt tag
+                        if (upload && !el.attribs['alt']) {
+                            el.attribs['alt'] = _.capitalize(upload.slug.replace(/[-_]/g, ' '));
+                        }
                         if (upload && upload.variants.length) {
                             el.attribs['srcset'] = upload.variants.map(function (v) { return v.url + " " + v.width + "w"; }).join(", ");
                             el.attribs['sizes'] = "(min-width: 800px) 50vw, 100vw";

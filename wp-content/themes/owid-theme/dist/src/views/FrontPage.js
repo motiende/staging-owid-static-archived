@@ -11,8 +11,20 @@ var free_brands_svg_icons_1 = require("@fortawesome/free-brands-svg-icons");
 var react_fontawesome_1 = require("@fortawesome/react-fontawesome");
 exports.FrontPage = function (props) {
     var entries = props.entries, posts = props.posts;
+    // Structured data for google
+    var structuredMarkup = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://ourworldindata.org",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://ourworldindata.org/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    };
     return React.createElement("html", null,
-        React.createElement(Head_1.Head, { canonicalUrl: settings.BAKED_URL }),
+        React.createElement(Head_1.Head, { canonicalUrl: settings.BAKED_URL },
+            React.createElement("script", { type: "application/jd+json", dangerouslySetInnerHTML: { __html: JSON.stringify(structuredMarkup) } })),
         React.createElement("body", { className: "FrontPage" },
             React.createElement(SiteHeader_1.SiteHeader, { entries: entries }),
             React.createElement("main", null,
