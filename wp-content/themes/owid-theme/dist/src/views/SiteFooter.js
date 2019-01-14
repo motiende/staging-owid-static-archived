@@ -17,7 +17,7 @@ exports.SiteFooter = function () {
             React.createElement("a", { href: "https://www.facebook.com/OurWorldinData" }, "Facebook"),
             React.createElement("a", { href: "https://github.com/owid" }, "GitHub"),
             React.createElement("a", { href: "/support" }, "Donate")),
-        React.createElement("script", { src: settings.ASSETS_URL + "/js/owid.js" }),
+        React.createElement("script", { src: settings.ASSETS_URL + "/owid.js" }),
         React.createElement("script", { src: settings.BAKED_URL + "/grapher/embedCharts.js" }));
 };
 //# sourceMappingURL=SiteFooter.js.map

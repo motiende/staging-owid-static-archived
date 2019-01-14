@@ -20,7 +20,7 @@ exports.ArticlePage = function (props) {
     return React.createElement("html", null,
         React.createElement(Head_1.Head, { pageTitle: pageTitle, pageDesc: pageDesc, canonicalUrl: canonicalUrl, imageUrl: post.imageUrl }, isEntry && React.createElement(CitationMeta_1.CitationMeta, { title: pageTitle, authors: post.authors, date: post.modifiedDate })),
         React.createElement("body", { className: formattingOptions.bodyClassName || "" },
-            React.createElement(SiteHeader_1.SiteHeader, { entries: entries, activeSlug: post.slug }),
+            React.createElement(SiteHeader_1.SiteHeader, null),
             React.createElement("main", null,
                 React.createElement("div", { className: "clearfix" + (post.tocHeadings.length > 0 ? " page-with-sidebar" : "") },
                     post.tocHeadings.length > 0 && React.createElement("div", { className: "entry-sidebar" },

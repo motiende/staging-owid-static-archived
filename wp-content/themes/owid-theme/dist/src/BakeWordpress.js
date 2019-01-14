@@ -151,7 +151,7 @@ var WordpressBaker = /** @class */ (function () {
                     case 2:
                         formatted = _a.sent();
                         html = renderPage_1.renderToHtmlPage(post.type == 'post'
-                            ? React.createElement(BlogPostPage_1.BlogPostPage, { entries: entries, post: formatted, formattingOptions: formattingOptions })
+                            ? React.createElement(BlogPostPage_1.BlogPostPage, { post: formatted, formattingOptions: formattingOptions })
                             : React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted, formattingOptions: formattingOptions }));
                         outPath = path.join(BAKED_DIR, post.slug + ".html");
                         return [4 /*yield*/, fs.mkdirp(path.dirname(outPath))];

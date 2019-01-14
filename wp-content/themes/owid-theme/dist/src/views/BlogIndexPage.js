@@ -8,12 +8,12 @@ var SiteFooter_1 = require("./SiteFooter");
 var formatting_1 = require("../formatting");
 var _ = require("lodash");
 exports.BlogIndexPage = function (props) {
-    var entries = props.entries, posts = props.posts, pageNum = props.pageNum, numPages = props.numPages;
+    var posts = props.posts, pageNum = props.pageNum, numPages = props.numPages;
     var pageNums = _.range(1, numPages + 1);
     return React.createElement("html", null,
         React.createElement(Head_1.Head, { canonicalUrl: settings.BAKED_URL + "/blog" + (pageNum > 1 ? "/page/" + pageNum : ""), pageTitle: "Blog" }),
         React.createElement("body", { className: "blog" },
-            React.createElement(SiteHeader_1.SiteHeader, { entries: entries }),
+            React.createElement(SiteHeader_1.SiteHeader, null),
             React.createElement("main", null,
                 React.createElement("div", { className: "site-content" },
                     React.createElement("h2", null, "Latest Posts"),

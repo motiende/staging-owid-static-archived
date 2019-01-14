@@ -7,7 +7,7 @@ var SiteHeader_1 = require("./SiteHeader");
 var SiteFooter_1 = require("./SiteFooter");
 var _ = require("lodash");
 exports.ChartsIndexPage = function (props) {
-    var entries = props.entries, chartItems = props.chartItems;
+    var chartItems = props.chartItems;
     var allTags = _.sortBy(_.uniqBy(_.flatten(chartItems.map(function (c) { return c.tags; })), function (t) { return t.id; }), function (t) { return t.name; });
     for (var _i = 0, chartItems_1 = chartItems; _i < chartItems_1.length; _i++) {
         var c = chartItems_1[_i];
@@ -30,7 +30,7 @@ exports.ChartsIndexPage = function (props) {
     return React.createElement("html", null,
         React.createElement(Head_1.Head, { canonicalUrl: settings.BAKED_URL + "/charts", pageTitle: "Charts", pageDesc: "All of the interactive charts on Our World in Data." }),
         React.createElement("body", { className: "ChartsIndexPage" },
-            React.createElement(SiteHeader_1.SiteHeader, { entries: entries }),
+            React.createElement(SiteHeader_1.SiteHeader, null),
             React.createElement("main", null,
                 React.createElement("header", { className: "chartsHeader" },
                     React.createElement("input", { type: "search", className: "chartsSearchInput", placeholder: "Filter interactive charts", autoFocus: true })),

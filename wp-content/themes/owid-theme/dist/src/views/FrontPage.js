@@ -26,7 +26,7 @@ exports.FrontPage = function (props) {
         React.createElement(Head_1.Head, { canonicalUrl: settings.BAKED_URL },
             React.createElement("script", { type: "application/ld+json", dangerouslySetInnerHTML: { __html: JSON.stringify(structuredMarkup) } })),
         React.createElement("body", { className: "FrontPage" },
-            React.createElement(SiteHeader_1.SiteHeader, { entries: entries }),
+            React.createElement(SiteHeader_1.SiteHeader, null),
             React.createElement("main", null,
                 React.createElement("div", { id: "homepage-cover" },
                     React.createElement("div", { className: "lead-in" },
