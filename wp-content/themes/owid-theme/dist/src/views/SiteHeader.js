@@ -52,10 +52,10 @@ exports.SiteHeader = function () {
                     React.createElement("a", { href: "/support" }, "Donate"))),
             React.createElement("ul", { className: "mobile" },
                 React.createElement("li", { className: "nav-button" },
-                    React.createElement("a", { href: "https://google.com/search?q=site:ourworldindata.org", "data-expand": "#search-dropdown" },
+                    React.createElement("a", { "data-expand": "#search-dropdown" },
                         React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faSearch }))),
                 React.createElement("li", { className: "nav-button" },
-                    React.createElement("a", { href: "/", "data-expand": "#topics-dropdown", className: 'mobile' },
+                    React.createElement("a", { "data-expand": "#topics-dropdown", className: 'mobile' },
                         React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faBars }))))),
         React.createElement("div", { id: "category-nav", className: "desktop" },
             React.createElement("ul", null, categories.map(function (category) {
