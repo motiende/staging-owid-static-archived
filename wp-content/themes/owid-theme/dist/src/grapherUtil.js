@@ -96,7 +96,6 @@ function bakeGrapherUrls(urls, opts) {
                     if (!(_i < urls_1.length)) return [3 /*break*/, 6];
                     url = urls_1[_i];
                     current = currentExports.get(url);
-                    console.log(url, current);
                     if (!current) {
                         toBake.push(url);
                         return [3 /*break*/, 5];
