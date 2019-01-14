@@ -152,8 +152,10 @@ function renderPage(postRow) {
                     entries = _a.sent();
                     $ = cheerio.load(post.content);
                     grapherUrls = $("iframe").toArray().filter(function (el) { return (el.attribs['src'] || '').match(/\/grapher\//); }).map(function (el) { return el.attribs['src']; });
+                    // XXX This is slow!
                     return [4 /*yield*/, grapherUtil_1.bakeGrapherUrls(grapherUrls, { silent: true })];
                 case 3:
+                    // XXX This is slow!
                     _a.sent();
                     return [4 /*yield*/, grapherUtil_1.getGrapherExportsByUrl()
                         // Extract formatting options from post HTML comment (if any)

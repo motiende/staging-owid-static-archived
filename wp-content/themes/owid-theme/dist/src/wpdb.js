@@ -249,20 +249,37 @@ function getFeaturedImages() {
     });
 }
 exports.getFeaturedImages = getFeaturedImages;
+function getFeaturedImageUrl(postId) {
+    return __awaiter(this, void 0, void 0, function () {
+        var rows;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (!cachedFeaturedImages) return [3 /*break*/, 1];
+                    return [2 /*return*/, cachedFeaturedImages.get(postId)];
+                case 1: return [4 /*yield*/, wpdb.query("\n            SELECT wp_postmeta.post_id, wp_posts.guid \n            FROM wp_postmeta \n            INNER JOIN wp_posts ON wp_posts.ID=wp_postmeta.meta_value\n            WHERE wp_postmeta.meta_key='_thumbnail_id' AND wp_postmeta.post_id=?", [postId])];
+                case 2:
+                    rows = _a.sent();
+                    return [2 /*return*/, rows.length ? rows[0].guid : undefined];
+            }
+        });
+    });
+}
+exports.getFeaturedImageUrl = getFeaturedImageUrl;
 function getFullPost(row) {
     return __awaiter(this, void 0, void 0, function () {
-        var authorship, featuredImages, permalinks, postId;
+        var authorship, permalinks, featuredImageUrl, postId;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0: return [4 /*yield*/, getAuthorship()];
                 case 1:
                     authorship = _a.sent();
-                    return [4 /*yield*/, getFeaturedImages()];
-                case 2:
-                    featuredImages = _a.sent();
                     return [4 /*yield*/, getPermalinks()];
-                case 3:
+                case 2:
                     permalinks = _a.sent();
+                    return [4 /*yield*/, getFeaturedImageUrl(row.ID)];
+                case 3:
+                    featuredImageUrl = _a.sent();
                     postId = row.post_status === "inherit" ? row.post_parent : row.ID;
                     return [2 /*return*/, {
                             id: row.ID,
@@ -274,7 +291,7 @@ function getFullPost(row) {
                             authors: authorship.get(postId) || [],
                             content: row.post_content,
                             excerpt: row.post_excerpt,
-                            imageUrl: featuredImages.get(row.ID)
+                            imageUrl: featuredImageUrl
                         }];
             }
         });

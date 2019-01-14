@@ -35,13 +35,14 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var settings_1 = require("./settings");
 var glob = require("glob");
 var parseUrl = require("url-parse");
 var exec = require('child-process-promise').exec;
 var path = require("path");
 var _ = require("lodash");
 var md5 = require("md5");
+var settings_1 = require("./settings");
+var grapherDb = require("./grapherDb");
 // Given a grapher url with query string, create a key to match export filenames
 function grapherUrlToFilekey(grapherUrl) {
     var url = parseUrl(grapherUrl);
@@ -50,23 +51,89 @@ function grapherUrlToFilekey(grapherUrl) {
     return "" + slug + (queryStr ? "-" + md5(queryStr) : "");
 }
 exports.grapherUrlToFilekey = grapherUrlToFilekey;
+function mapSlugsToIds() {
+    return __awaiter(this, void 0, void 0, function () {
+        var redirects, rows, slugToId, _i, redirects_1, row, _a, rows_1, row;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, grapherDb.query("SELECT chart_id, slug FROM chart_slug_redirects")];
+                case 1:
+                    redirects = _b.sent();
+                    return [4 /*yield*/, grapherDb.query("SELECT id, JSON_UNQUOTE(JSON_EXTRACT(config, \"$.slug\")) AS slug FROM charts")];
+                case 2:
+                    rows = _b.sent();
+                    slugToId = {};
+                    for (_i = 0, redirects_1 = redirects; _i < redirects_1.length; _i++) {
+                        row = redirects_1[_i];
+                        slugToId[row.slug] = row.chart_id;
+                    }
+                    for (_a = 0, rows_1 = rows; _a < rows_1.length; _a++) {
+                        row = rows_1[_a];
+                        slugToId[row.slug] = row.id;
+                    }
+                    return [2 /*return*/, slugToId];
+            }
+        });
+    });
+}
+exports.mapSlugsToIds = mapSlugsToIds;
 function bakeGrapherUrls(urls, opts) {
     if (opts === void 0) { opts = {}; }
     return __awaiter(this, void 0, void 0, function () {
-        var args, promise;
+        var currentExports, slugToId, toBake, _i, urls_1, url, current, slug, chartId, rows, args, promise;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0:
+                case 0: return [4 /*yield*/, getGrapherExportsByUrl()];
+                case 1:
+                    currentExports = _a.sent();
+                    return [4 /*yield*/, mapSlugsToIds()];
+                case 2:
+                    slugToId = _a.sent();
+                    toBake = [];
+                    _i = 0, urls_1 = urls;
+                    _a.label = 3;
+                case 3:
+                    if (!(_i < urls_1.length)) return [3 /*break*/, 6];
+                    url = urls_1[_i];
+                    current = currentExports.get(url);
+                    console.log(url, current);
+                    if (!current) {
+                        toBake.push(url);
+                        return [3 /*break*/, 5];
+                    }
+                    slug = _.last(parseUrl(url).pathname.split('/'));
+                    if (!slug) {
+                        console.error("Invalid chart url " + url);
+                        return [3 /*break*/, 5];
+                    }
+                    chartId = slugToId[slug];
+                    return [4 /*yield*/, grapherDb.query("SELECT charts.config->>\"$.version\" AS version FROM charts WHERE charts.id=?", [chartId])];
+                case 4:
+                    rows = _a.sent();
+                    if (!rows.length) {
+                        console.error("Mysteriously missing chart by id " + chartId);
+                        return [3 /*break*/, 5];
+                    }
+                    if (rows[0].version > current.version) {
+                        toBake.push(url);
+                    }
+                    _a.label = 5;
+                case 5:
+                    _i++;
+                    return [3 /*break*/, 3];
+                case 6:
+                    if (!(toBake.length > 0)) return [3 /*break*/, 8];
                     args = [settings_1.GRAPHER_DIR + "/dist/src/bakeChartsToImages.js"];
-                    args.push.apply(args, urls);
+                    args.push.apply(args, toBake);
                     args.push(settings_1.BAKED_DIR + "/exports");
                     promise = exec("cd " + settings_1.GRAPHER_DIR + " && node " + args.map(function (arg) { return JSON.stringify(arg); }).join(" "));
                     if (!opts.silent)
                         promise.childProcess.stdout.on('data', function (data) { return console.log(data.toString().trim()); });
                     return [4 /*yield*/, promise];
-                case 1:
+                case 7:
                     _a.sent();
-                    return [2 /*return*/];
+                    _a.label = 8;
+                case 8: return [2 /*return*/];
             }
         });
     });
