@@ -21,7 +21,7 @@ exports.BlogPostPage = function (props) {
                         React.createElement("a", { href: "/blog" }, "Blog"))),
                 React.createElement("div", { className: "site-content" },
                     React.createElement("article", { className: "post" },
-                        React.createElement("header", { className: "article-header" },
+                        React.createElement("header", { className: "articleHeader" },
                             React.createElement("h1", { className: "entry-title" }, post.title),
                             React.createElement("div", { className: "entry-meta" },
                                 React.createElement("time", null, formatting_1.formatDate(post.date)),

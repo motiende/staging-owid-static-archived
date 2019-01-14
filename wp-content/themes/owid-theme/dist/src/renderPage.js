@@ -37,7 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var wpdb = require("./wpdb");
 var grapherDb = require("./grapherDb");
-var ArticlePage_1 = require("./views/ArticlePage");
+var LongFormPage_1 = require("./views/LongFormPage");
 var BlogPostPage_1 = require("./views/BlogPostPage");
 var BlogIndexPage_1 = require("./views/BlogIndexPage");
 var FrontPage_1 = require("./views/FrontPage");
@@ -169,7 +169,7 @@ function renderPage(postRow) {
                     if (postRow.post_type === 'post')
                         return [2 /*return*/, renderToHtmlPage(React.createElement(BlogPostPage_1.BlogPostPage, { post: formatted, formattingOptions: formattingOptions }))];
                     else
-                        return [2 /*return*/, renderToHtmlPage(React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted, formattingOptions: formattingOptions }))];
+                        return [2 /*return*/, renderToHtmlPage(React.createElement(LongFormPage_1.LongFormPage, { entries: entries, post: formatted, formattingOptions: formattingOptions }))];
                     return [2 /*return*/];
             }
         });

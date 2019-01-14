@@ -45,7 +45,7 @@ var cheerio = require("cheerio");
 var wpdb = require("./wpdb");
 var grapherDb = require("./grapherDb");
 var formatting_1 = require("./formatting");
-var ArticlePage_1 = require("./views/ArticlePage");
+var LongFormPage_1 = require("./views/LongFormPage");
 var BlogPostPage_1 = require("./views/BlogPostPage");
 var settings = require("./settings");
 var BAKED_DIR = settings.BAKED_DIR, BAKED_URL = settings.BAKED_URL, WORDPRESS_DIR = settings.WORDPRESS_DIR, BLOG_POSTS_PER_PAGE = settings.BLOG_POSTS_PER_PAGE;
@@ -152,7 +152,7 @@ var WordpressBaker = /** @class */ (function () {
                         formatted = _a.sent();
                         html = renderPage_1.renderToHtmlPage(post.type == 'post'
                             ? React.createElement(BlogPostPage_1.BlogPostPage, { post: formatted, formattingOptions: formattingOptions })
-                            : React.createElement(ArticlePage_1.ArticlePage, { entries: entries, post: formatted, formattingOptions: formattingOptions }));
+                            : React.createElement(LongFormPage_1.LongFormPage, { entries: entries, post: formatted, formattingOptions: formattingOptions }));
                         outPath = path.join(BAKED_DIR, post.slug + ".html");
                         return [4 /*yield*/, fs.mkdirp(path.dirname(outPath))];
                     case 3:

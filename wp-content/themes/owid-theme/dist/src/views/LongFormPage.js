@@ -8,7 +8,7 @@ var SiteHeader_1 = require("./SiteHeader");
 var SiteFooter_1 = require("./SiteFooter");
 var formatting_1 = require("../formatting");
 var _ = require("lodash");
-exports.ArticlePage = function (props) {
+exports.LongFormPage = function (props) {
     var entries = props.entries, post = props.post, formattingOptions = props.formattingOptions;
     var authorsText = formatting_1.formatAuthors(post.authors, true);
     var pageTitle = post.title;
@@ -17,7 +17,7 @@ exports.ArticlePage = function (props) {
     var publishedYear = post.modifiedDate.getFullYear();
     var allEntries = _.flatten(_.values(entries).map(function (c) { return c.entries; }));
     var isEntry = _.includes(allEntries.map(function (e) { return e.slug; }), post.slug);
-    var classes = ["ArticlePage"];
+    var classes = ["LongFormPage"];
     if (formattingOptions.bodyClassName)
         classes.push(formattingOptions.bodyClassName);
     return React.createElement("html", null,
@@ -75,4 +75,4 @@ exports.ArticlePage = function (props) {
                             React.createElement("a", { className: "ab-item", href: settings_1.WORDPRESS_URL + "/wp-admin/post.php?post=" + post.id + "&action=edit" }, "Edit Page"))))),
             React.createElement(SiteFooter_1.SiteFooter, null)));
 };
-//# sourceMappingURL=ArticlePage.js.map
+//# sourceMappingURL=LongFormPage.js.map
