@@ -267,7 +267,7 @@ var HeaderMenus = /** @class */ (function () {
             var json;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, fetch("/entries.json", {
+                    case 0: return [4 /*yield*/, fetch("/headerMenu.json", {
                             method: "GET",
                             credentials: 'same-origin',
                             headers: {

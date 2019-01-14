@@ -182,7 +182,7 @@ export class SiteHeaderMenus extends React.Component<{ categories: CategoryWithE
 
 export class HeaderMenus {
     async run() {
-        const json = await (await fetch("/entries.json", {
+        const json = await (await fetch("/headerMenu.json", {
             method: "GET",
             credentials: 'same-origin',
             headers: {

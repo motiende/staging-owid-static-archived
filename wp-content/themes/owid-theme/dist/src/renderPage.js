@@ -128,7 +128,7 @@ function renderPageById(id, isPreview) {
     });
 }
 exports.renderPageById = renderPageById;
-function renderEntriesJson() {
+function renderMenuJson() {
     return __awaiter(this, void 0, void 0, function () {
         var categories;
         return __generator(this, function (_a) {
@@ -141,7 +141,7 @@ function renderEntriesJson() {
         });
     });
 }
-exports.renderEntriesJson = renderEntriesJson;
+exports.renderMenuJson = renderMenuJson;
 function renderPage(postRow) {
     return __awaiter(this, void 0, void 0, function () {
         var post, entries, $, grapherUrls, exportsByUrl, formattingOptions, formatted;
