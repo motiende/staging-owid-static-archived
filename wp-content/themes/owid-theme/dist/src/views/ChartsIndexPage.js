@@ -33,10 +33,10 @@ exports.ChartsIndexPage = function (props) {
             React.createElement(SiteHeader_1.SiteHeader, { entries: entries }),
             React.createElement("main", null,
                 React.createElement("header", { className: "chartsHeader" },
-                    React.createElement("input", { type: "search", className: "chartsSearchInput", placeholder: "Filter interactive charts" })),
-                allTags.map(function (t) { return React.createElement("section", null,
+                    React.createElement("input", { type: "search", className: "chartsSearchInput", placeholder: "Filter interactive charts", autoFocus: true })),
+                allTags.map(function (t) { return React.createElement("section", { key: t.id },
                     React.createElement("h2", null, t.name),
-                    React.createElement("ul", null, t.charts.map(function (c) { return React.createElement("li", null,
+                    React.createElement("ul", null, t.charts.map(function (c) { return React.createElement("li", { key: c.id },
                         React.createElement("a", { href: "/grapher/" + c.slug }, c.title)); }))); })),
             React.createElement(SiteFooter_1.SiteFooter, null),
             React.createElement("script", null, "window.runChartsIndexPage()")));

@@ -80,7 +80,6 @@ function renderChartsPage() {
                     chartsById = _.keyBy(chartItems, function (c) { return c.id; });
                     for (_a = 0, chartTags_1 = chartTags; _a < chartTags_1.length; _a++) {
                         ct = chartTags_1[_a];
-                        console.log(ct.tagParentId);
                         // XXX hardcoded filtering to public parent tags
                         if ([1515, 1507, 1513, 1504, 1502, 1509, 1506, 1501, 1514, 1511, 1500, 1503, 1505, 1508, 1512, 1510].indexOf(ct.tagParentId) === -1)
                             continue;

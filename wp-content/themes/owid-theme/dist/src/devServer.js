@@ -38,9 +38,9 @@ var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = require("express");
 var renderPage_1 = require("./renderPage");
-var devServer = express_1.Router();
-exports.devServer = devServer;
-devServer.get('/', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
+var beforeWebpack = express_1.Router();
+exports.beforeWebpack = beforeWebpack;
+beforeWebpack.get('/', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
     var _a, _b;
     return __generator(this, function (_c) {
         switch (_c.label) {
@@ -53,7 +53,7 @@ devServer.get('/', function (req, res) { return __awaiter(_this, void 0, void 0,
         }
     });
 }); });
-devServer.get('/charts', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
+beforeWebpack.get('/charts', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
     var _a, _b;
     return __generator(this, function (_c) {
         switch (_c.label) {
@@ -66,7 +66,9 @@ devServer.get('/charts', function (req, res) { return __awaiter(_this, void 0, v
         }
     });
 }); });
-devServer.get('/:slug', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
+var afterWebpack = express_1.Router();
+exports.afterWebpack = afterWebpack;
+afterWebpack.get('/:slug', function (req, res) { return __awaiter(_this, void 0, void 0, function () {
     var _a, _b;
     return __generator(this, function (_c) {
         switch (_c.label) {

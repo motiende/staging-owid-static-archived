@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var _ = require("lodash");
+var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
+var react_fontawesome_1 = require("@fortawesome/react-fontawesome");
 // XXX this menu is pretty old and should be redone at some stage
 exports.SiteHeader = function (props) {
     var entries = props.entries;
@@ -28,6 +30,8 @@ exports.SiteHeader = function (props) {
                         React.createElement("input", { type: "hidden", name: "sitesearch", value: "ourworldindata.org" }),
                         React.createElement("input", { type: "search", name: "q", placeholder: "Search..." }))),
                 React.createElement("li", null,
+                    React.createElement("a", { href: "/charts" }, "Charts")),
+                React.createElement("li", null,
                     React.createElement("a", { href: "https://sdg-tracker.org", title: "Sustainable Development Goals" }, "SDGs")),
                 React.createElement("li", null,
                     React.createElement("a", { href: "/blog" }, "Blog")),
@@ -40,10 +44,10 @@ exports.SiteHeader = function (props) {
             React.createElement("ul", { className: "mobile" },
                 React.createElement("li", { className: "nav-button" },
                     React.createElement("a", { href: "https://google.com/search?q=site:ourworldindata.org", "data-expand": "#search-dropdown" },
-                        React.createElement("i", { className: 'fac fac-search' }))),
+                        React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faSearch }))),
                 React.createElement("li", { className: "nav-button" },
                     React.createElement("a", { href: "/", "data-expand": "#topics-dropdown", className: 'mobile' },
-                        React.createElement("i", { className: 'fac fac-bars' }))))),
+                        React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faBars }))))),
         React.createElement("div", { id: "topics-dropdown", className: "mobile" },
             React.createElement("ul", null,
                 React.createElement("li", { className: "header" },
@@ -59,6 +63,8 @@ exports.SiteHeader = function (props) {
                                     React.createElement("a", { className: entry.starred ? "starred" : undefined, title: entry.starred ? "Starred pages are our best and most complete entries." : undefined, href: "/" + entry.slug }, entry.title));
                             }))));
                 }),
+                React.createElement("li", { className: "end-link" },
+                    React.createElement("a", { href: "/charts" }, "Charts")),
                 React.createElement("li", { className: "end-link" },
                     React.createElement("a", { href: "https://sdg-tracker.org" }, "SDGs")),
                 React.createElement("li", { className: "end-link" },

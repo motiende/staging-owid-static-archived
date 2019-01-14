@@ -43,6 +43,7 @@ var shell = require("shelljs");
 var _ = require("lodash");
 var cheerio = require("cheerio");
 var wpdb = require("./wpdb");
+var grapherDb = require("./grapherDb");
 var formatting_1 = require("./formatting");
 var ArticlePage_1 = require("./views/ArticlePage");
 var BlogPostPage_1 = require("./views/BlogPostPage");
@@ -69,15 +70,15 @@ var WordpressBaker = /** @class */ (function () {
                             // RSS feed
                             "/feed /atom.xml 302",
                             // Backwards compatibility-- admin urls
-                            "/wp-admin/* https://owid.cloud/wp-admin/:splat 302",
-                            "/wp-login.php https://owid.cloud/wp-login.php 302",
-                            "/grapher/admin/* https://owid.cloud/grapher/admin/:splat 302",
+                            "/wp-admin/* https://owid.cloud/wp-admin/:splat 301",
+                            "/wp-login.php https://owid.cloud/wp-login.php 301",
+                            "/grapher/admin/* https://owid.cloud/grapher/admin/:splat 301",
                             // Backwards compatibility-- old Max stuff that isn't static-friendly
-                            "/roser/* https://www.maxroser.com/roser/:splat 302",
-                            "/wp-content/uploads/nvd3/* https://www.maxroser.com/owidUploads/nvd3/:splat 302",
-                            "/wp-content/uploads/datamaps/* https://www.maxroser.com/owidUploads/datamaps/:splat 302",
-                            "/slides/Max_PPT_presentations/* https://www.maxroser.com/slides/Max_PPT_presentations/:splat 302",
-                            "/slides/Max_Interactive_Presentations/* https://www.maxroser.com/slides/Max_Interactive_Presentations/:splat 302",
+                            "/roser/* https://www.maxroser.com/roser/:splat 301",
+                            "/wp-content/uploads/nvd3/* https://www.maxroser.com/owidUploads/nvd3/:splat 301",
+                            "/wp-content/uploads/datamaps/* https://www.maxroser.com/owidUploads/datamaps/:splat 301",
+                            "/slides/Max_PPT_presentations/* https://www.maxroser.com/slides/Max_PPT_presentations/:splat 301",
+                            "/slides/Max_Interactive_Presentations/* https://www.maxroser.com/slides/Max_Interactive_Presentations/:splat 301",
                             // Backwards compatibility-- public urls
                             "/entries/* /:splat 301",
                             "/entries /#entries 302",
@@ -91,7 +92,7 @@ var WordpressBaker = /** @class */ (function () {
                             "/grapher/view/* /grapher/:splat 301",
                             // Main grapher chart urls are proxied through to separate repo
                             "/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200",
-                            "/slides/* https://slides.ourworldindata.org/:splat 302"
+                            "/slides/* https://slides.ourworldindata.org/:splat 301"
                         ];
                         return [4 /*yield*/, wpdb.query("SELECT url, action_data, action_code FROM wp_redirection_items")];
                     case 1:
@@ -399,6 +400,7 @@ var WordpressBaker = /** @class */ (function () {
     };
     WordpressBaker.prototype.end = function () {
         wpdb.end();
+        grapherDb.end();
     };
     return WordpressBaker;
 }());

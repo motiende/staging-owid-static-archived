@@ -64,7 +64,7 @@ exports.ArticlePage = function (props) {
                 React.createElement("div", { className: "quicklinks", id: "wp-toolbar", role: "navigation", "aria-label": "Toolbar" },
                     React.createElement("ul", { id: "wp-admin-bar-root-default", className: "ab-top-menu" },
                         React.createElement("li", { id: "wp-admin-bar-site-name", className: "menupop" },
-                            React.createElement("a", { className: "ab-item", "aria-haspopup": "true", href: "/wp-admin/" }, "Our World In Data")),
+                            React.createElement("a", { className: "ab-item", "aria-haspopup": "true", href: "/wp-admin/" }, "Wordpress")),
                         React.createElement("li", { id: "wp-admin-bar-edit" },
                             React.createElement("a", { className: "ab-item", href: settings_1.WORDPRESS_URL + "/wp-admin/post.php?post=" + post.id + "&action=edit" }, "Edit Page"))))),
             React.createElement(SiteFooter_1.SiteFooter, null)));

@@ -114,7 +114,6 @@ var ChartSearcher = /** @class */ (function () {
             this.searchInput.value = decodeHashSafe(m[1]);
         }
         this.query = this.searchInput.value;
-        this.searchInput.focus();
     };
     __decorate([
         mobx_1.observable

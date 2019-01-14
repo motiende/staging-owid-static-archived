@@ -6,6 +6,9 @@ var Head_1 = require("./Head");
 var SiteHeader_1 = require("./SiteHeader");
 var SiteFooter_1 = require("./SiteFooter");
 var formatting_1 = require("../formatting");
+var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
+var free_brands_svg_icons_1 = require("@fortawesome/free-brands-svg-icons");
+var react_fontawesome_1 = require("@fortawesome/react-fontawesome");
 exports.FrontPage = function (props) {
     var entries = props.entries, posts = props.posts;
     return React.createElement("html", null,
@@ -64,17 +67,14 @@ exports.FrontPage = function (props) {
                                     React.createElement("a", { href: '/slides/africa-in-data' }, "Africa"))))),
                     React.createElement("div", { id: "homepage-twitter" },
                         React.createElement("h3", null,
-                            React.createElement("a", { href: "https://twitter.com/MaxCRoser" }, "Follow us")),
+                            React.createElement("a", { href: "https://twitter.com/OurWorldInData" }, "Follow us")),
                         React.createElement("div", { className: "social" },
-                            React.createElement("a", { href: "https://twitter.com/MaxCRoser" },
-                                React.createElement("i", { className: "fac fac-twitter" })),
+                            React.createElement("a", { href: "https://twitter.com/OurWorldInData" },
+                                React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_brands_svg_icons_1.faTwitter })),
                             React.createElement("a", { href: "https://www.facebook.com/OurWorldinData" },
-                                React.createElement("i", { className: "fac fac-facebook" })),
+                                React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_brands_svg_icons_1.faFacebookF })),
                             React.createElement("a", { href: "/feed/" },
-                                React.createElement("i", { className: "fac fac-feed" }))),
-                        React.createElement("a", { className: "twitter-timeline", "data-height": "600", href: "https://twitter.com/MaxCRoser" }, "Tweets by MaxCRoser"),
-                        " ",
-                        React.createElement("script", { async: true, src: "//platform.twitter.com/widgets.js" })))),
+                                React.createElement(react_fontawesome_1.FontAwesomeIcon, { icon: free_solid_svg_icons_1.faRss })))))),
             React.createElement(SiteFooter_1.SiteFooter, null)));
 };
 //# sourceMappingURL=FrontPage.js.map
