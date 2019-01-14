@@ -15,16 +15,16 @@ exports.FrontPage = function (props) {
     var structuredMarkup = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "url": "https://ourworldindata.org",
+        "url": settings.BAKED_URL,
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://ourworldindata.org/search?q={search_term_string}",
+            "target": settings.BAKED_URL + "/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     };
     return React.createElement("html", null,
         React.createElement(Head_1.Head, { canonicalUrl: settings.BAKED_URL },
-            React.createElement("script", { type: "application/jd+json", dangerouslySetInnerHTML: { __html: JSON.stringify(structuredMarkup) } })),
+            React.createElement("script", { type: "application/ld+json", dangerouslySetInnerHTML: { __html: JSON.stringify(structuredMarkup) } })),
         React.createElement("body", { className: "FrontPage" },
             React.createElement(SiteHeader_1.SiteHeader, { entries: entries }),
             React.createElement("main", null,
