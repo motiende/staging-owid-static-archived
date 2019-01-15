@@ -64,7 +64,7 @@ function renderChartsPage() {
         var chartItems, chartTags, _i, chartItems_1, c, chartsById, _a, chartTags_1, ct, c;
         return __generator(this, function (_b) {
             switch (_b.label) {
-                case 0: return [4 /*yield*/, grapherDb.query("SELECT id, config->>\"$.slug\" AS slug, config->>\"$.title\" AS title, config->>\"$.variantName\" AS variantName FROM charts")];
+                case 0: return [4 /*yield*/, grapherDb.query("SELECT id, config->>\"$.slug\" AS slug, config->>\"$.title\" AS title FROM charts")];
                 case 1:
                     chartItems = _b.sent();
                     return [4 /*yield*/, grapherDb.query("\n        SELECT ct.chartId, ct.tagId, t.name as tagName, t.parentId as tagParentId FROM chart_tags ct\n        JOIN charts c ON c.id=ct.chartId\n        JOIN tags t ON t.id=ct.tagId\n    ")];
