@@ -79,21 +79,36 @@ var ChartResult = /** @class */ (function (_super) {
     ChartResult.prototype.render = function () {
         var hit = this.props.hit;
         return React.createElement("div", { className: "ChartResult" },
-            React.createElement("a", { href: "/grapher/" + hit.slug, dangerouslySetInnerHTML: { __html: hit._highlightResult.title.value } }));
+            React.createElement("a", { href: "https://ourworldindata.org/grapher/" + hit.slug, dangerouslySetInnerHTML: { __html: hit._highlightResult.title.value } }));
     };
     return ChartResult;
 }(React.Component));
 var SearchResults = /** @class */ (function (_super) {
     __extends(SearchResults, _super);
     function SearchResults() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.newChart = false;
+        return _this;
     }
+    Object.defineProperty(SearchResults.prototype, "bestChartSlug", {
+        get: function () {
+            return this.props.results.charts.length ? this.props.results.charts[0].slug : undefined;
+        },
+        enumerable: true,
+        configurable: true
+    });
     SearchResults.prototype.componentDidMount = function () {
-        document.body.style.overflowY = 'hidden';
+        var _this = this;
+        mobx_1.autorun(function () {
+            _this.bestChartSlug ? _this.newChart = true : undefined;
+        });
         this.componentDidUpdate();
     };
     SearchResults.prototype.componentDidUpdate = function () {
-        window.Grapher.embedAll();
+        if (this.newChart) {
+            window.Grapher.embedAll();
+            this.newChart = false;
+        }
     };
     SearchResults.prototype.componentWillUnmount = function () {
         document.body.style.overflowY = null;
@@ -101,9 +116,21 @@ var SearchResults = /** @class */ (function (_super) {
     SearchResults.prototype.render = function () {
         var results = this.props.results;
         return React.createElement("div", { className: "SearchResults" },
-            !!results.charts.length && React.createElement("figure", { "data-grapher-src": "https://ourworldindata.org/grapher/" + results.charts[0].slug }),
-            results.charts.map(function (hit) { return React.createElement(ChartResult, { key: hit.slug, hit: hit }); }));
+            React.createElement("div", { className: "container" },
+                React.createElement("div", { className: "postResults" },
+                    React.createElement("h2", null, "Posts"),
+                    results.posts.map(function (hit) { return React.createElement(PostResult, { key: hit.slug, hit: hit }); })),
+                React.createElement("div", { className: "chartResults" },
+                    React.createElement("h2", null, "Data"),
+                    this.bestChartSlug && React.createElement("figure", { "data-grapher-src": "https://ourworldindata.org/grapher/" + this.bestChartSlug }),
+                    results.charts.map(function (hit) { return React.createElement(ChartResult, { key: hit.slug, hit: hit }); }))));
     };
+    __decorate([
+        mobx_1.computed
+    ], SearchResults.prototype, "bestChartSlug", null);
+    SearchResults = __decorate([
+        mobx_react_1.observer
+    ], SearchResults);
     return SearchResults;
 }(React.Component));
 var HeaderSearch = /** @class */ (function (_super) {
@@ -130,7 +157,6 @@ var HeaderSearch = /** @class */ (function (_super) {
                             posts: json.results[0].hits,
                             charts: json.results[1].hits
                         };
-                        console.log(this.results);
                         return [3 /*break*/, 3];
                     case 2:
                         this.results = undefined;

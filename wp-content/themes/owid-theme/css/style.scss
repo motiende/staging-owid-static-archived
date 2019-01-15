@@ -2456,6 +2456,21 @@ html:not(.js) {
 	padding: 1rem;
 	overflow-y: scroll;
 
+
+	.container {
+		max-width: 80rem;
+		margin: auto;
+		display: flex;
+		flex-direction: row;	
+	}
+
+	.container > :first-child {
+		margin-right: 5rem;
+	}
+	.postResults, .chartResults {
+		width: 50%;
+	}
+
 	em {
 		background-color: yellow;
 		font-style: initial;
