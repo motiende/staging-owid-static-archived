@@ -60,6 +60,7 @@ var mobx_1 = require("mobx");
 var mobx_react_1 = require("mobx-react");
 var react_fontawesome_1 = require("@fortawesome/react-fontawesome");
 var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
+var HeaderSearch_1 = require("./HeaderSearch");
 var DesktopHeader = /** @class */ (function (_super) {
     __extends(DesktopHeader, _super);
     function DesktopHeader() {
@@ -77,9 +78,7 @@ var DesktopHeader = /** @class */ (function (_super) {
                 React.createElement("a", { className: "logo", href: "/" }, "Our World in Data"),
                 React.createElement("ul", { className: "desktop" },
                     React.createElement("li", null,
-                        React.createElement("form", { id: "search-nav", action: "https://google.com/search", method: "GET" },
-                            React.createElement("input", { type: "hidden", name: "sitesearch", value: "ourworldindata.org" }),
-                            React.createElement("input", { type: "search", name: "q", placeholder: "Search..." }))),
+                        React.createElement(HeaderSearch_1.HeaderSearch, null)),
                     React.createElement("li", null,
                         React.createElement("a", { href: "/charts" }, "Charts")),
                     React.createElement("li", null,

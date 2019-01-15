@@ -101,7 +101,7 @@ function formatLatex(html, latexBlocks) {
 }
 function formatWordpressPost(post, html, formattingOptions, grapherExports) {
     return __awaiter(this, void 0, void 0, function () {
-        var _a, latexBlocks, footnotes, tables, $, sectionStarts, _i, sectionStarts_1, start, $start, $contents, $wrapNode, grapherIframes, _b, grapherIframes_1, el, src, chart, output, $p, _c, _d, iframe, _e, _f, p, $p, _g, _h, table, $table, $div, uploadDex, _j, _k, el, $el, src, upload, $a, tocHeadings, existingSlugs, parentHeading;
+        var _a, latexBlocks, acknowledgements, references, footnotes, tables, $, sectionStarts, _i, sectionStarts_1, start, $start, $contents, $wrapNode, grapherIframes, _b, grapherIframes_1, el, src, chart, output, $p, _c, _d, iframe, _e, _f, p, $p, _g, _h, table, $table, $div, uploadDex, _j, _k, el, $el, src, upload, $a, tocHeadings, existingSlugs, parentHeading;
         return __generator(this, function (_l) {
             switch (_l.label) {
                 case 0:
@@ -110,6 +110,15 @@ function formatWordpressPost(post, html, formattingOptions, grapherExports) {
                     // Standardize spacing
                     html = html.replace(/&nbsp;/g, "").replace(/\r\n/g, "\n").replace(/\n+/g, "\n").replace(/\n/g, "\n\n");
                     _a = extractLatex(html), html = _a[0], latexBlocks = _a[1];
+                    html = html.replace(/\[acknowledgements\]([\s\S]*?)\[\/acknowledgements\]/gm, function (_, ack) {
+                        acknowledgements = wpautop(ack);
+                        return "";
+                    });
+                    references = [];
+                    html = html.replace(/\[cite\]([\s\S]*?)\[\/cite\]/gm, function (_, bibtex) {
+                        references.push({}); // Todo
+                        return "";
+                    });
                     // Replicate wordpress formatting (thank gods there's an npm package)
                     if (formattingOptions.wpFormat) {
                         html = wpautop(html);
@@ -256,7 +265,10 @@ function formatWordpressPost(post, html, formattingOptions, grapherExports) {
                             modifiedDate: post.modifiedDate,
                             authors: post.authors,
                             html: $("body").html(),
+                            plaintext: $("body").text(),
                             footnotes: footnotes,
+                            acknowledgements: acknowledgements,
+                            references: references,
                             excerpt: post.excerpt || $($("p")[0]).text(),
                             imageUrl: post.imageUrl,
                             tocHeadings: tocHeadings
@@ -316,7 +328,9 @@ function formatPost(post, formattingOptions, grapherExports) {
                         modifiedDate: post.modifiedDate,
                         authors: post.authors,
                         html: html,
+                        plaintext: cheerio.load(html)("body").text(),
                         footnotes: [],
+                        references: [],
                         excerpt: post.excerpt || "",
                         imageUrl: post.imageUrl,
                         tocHeadings: []

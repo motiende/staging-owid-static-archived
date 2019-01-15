@@ -27,6 +27,7 @@ exports.Head = function (props) {
         React.createElement("meta", { name: "twitter:description", content: pageDesc }),
         React.createElement("meta", { name: "twitter:image", content: imageUrl }),
         React.createElement("link", { rel: "stylesheet", href: settings_1.ASSETS_URL + "/css/owid.css" }),
+        React.createElement("link", { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/instantsearch.css@7.0.0/themes/algolia-min.css" }),
         props.children);
 };
 //# sourceMappingURL=Head.js.map

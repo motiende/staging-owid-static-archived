@@ -285,6 +285,7 @@ function main(target, isPreview) {
                     return [3 /*break*/, 11];
                 case 10:
                     wpdb.end();
+                    grapherDb.end();
                     return [7 /*endfinally*/];
                 case 11: return [2 /*return*/];
             }
