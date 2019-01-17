@@ -1,0 +1,15 @@
+{
+  "commons.js": "js/commons.js",
+  "commons.css": "css/commons.css",
+  "admin.js": "js/admin.js",
+  "admin.css": "css/admin.css",
+  "charts.js": "js/charts.js",
+  "owid.js": "js/owid.js",
+  "owid.css": "css/owid.css",
+  "fontawesome-webfont.eot": "674f50d287a8c48dc19ba404d20fe713.eot",
+  "fontawesome-webfont.svg?v=4.7.0": "912ec66d7572ff821749319396470bde.svg",
+  "WorldMapDark2.png": "a2dfe93324ae876f58185f564fb706ba.png",
+  "fontawesome-webfont.woff2?v=4.7.0": "af7ae505a9eed503f8b8e6982036873e.woff2",
+  "fontawesome-webfont.ttf?v=4.7.0": "b06871f281fee6b241d60582ae9369b9.ttf",
+  "fontawesome-webfont.woff?v=4.7.0": "fee66e712a8a08eef5805a46892932ad.woff"
+}
