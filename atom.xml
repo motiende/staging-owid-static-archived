@@ -5,8 +5,17 @@
     <id>https://ourworldindata.org/</id>
     <link type="text/html" rel="alternate" href="https://ourworldindata.org"/>
     <link type="application/atom+xml" rel="self" href="https://ourworldindata.org/atom.xml"/>
-    <updated>2019-01-15T11:00:14.000Z</updated>
+    <updated>2019-01-18T05:00:09.000Z</updated>
     <entry>
+        <title>Number of people in the world without electricity falls below one billion</title>
+    <id>https://ourworldindata.org/number-of-people-in-the-world-without-electricity-access-falls-below-one-billion</id>
+        <link rel="alternate" href="https://ourworldindata.org/number-of-people-in-the-world-without-electricity-access-falls-below-one-billion"/>
+        <published>2019-01-18T05:00:09.000Z</published>
+        <updated>2019-01-18T14:01:12.000Z</updated>
+        <author><name>Hannah Ritchie</name></author>
+        <summary>This blog post draws on data and research discussed in our entry on Energy Production & Changing Energy Sources.</summary>
+    </entry>
+<entry>
         <title>India's population growth will come to an end: the number of children has already peaked</title>
     <id>https://ourworldindata.org/indias-population-growth-will-come-to-an-end</id>
         <link rel="alternate" href="https://ourworldindata.org/indias-population-growth-will-come-to-an-end"/>
@@ -86,14 +95,5 @@
         <updated>2018-11-01T15:47:33.000Z</updated>
         <author><name>Hannah Ritchie</name></author>
         <summary>This blog post draws on data and research discussed in our entry on Child Mortality.</summary>
-    </entry>
-<entry>
-        <title>Is trade a major driver of income inequality?</title>
-    <id>https://ourworldindata.org/trade-and-income-inequality</id>
-        <link rel="alternate" href="https://ourworldindata.org/trade-and-income-inequality"/>
-        <published>2018-10-22T07:27:02.000Z</published>
-        <updated>2018-10-22T16:40:48.000Z</updated>
-        <author><name>Esteban Ortiz-Ospina</name></author>
-        <summary>Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics. In this blog post we cover the link between globalization and inequality. In two separate companion posts we cover the link between globalization and economic growth, and the link between globalization and jobs. These articles draw on data and research discussed in our entry on International Trade.</summary>
     </entry>
 </feed>
