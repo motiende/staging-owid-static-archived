@@ -1,8 +1,8 @@
-/.well-known/* https://owid.cloud/.well-known/:splat 200
+/.well-known/* https://owid.mispy.me/.well-known/:splat 200
 /feed /atom.xml 302
-/wp-admin/* https://owid.cloud/wp-admin/:splat 301
-/wp-login.php https://owid.cloud/wp-login.php 301
-/grapher/admin/* https://owid.cloud/grapher/admin/:splat 301
+/wp-admin/* https://owid.mispy.me/wp-admin/:splat 301
+/wp-login.php https://owid.mispy.me/wp-login.php 301
+/grapher/admin/* https://owid.mispy.me/grapher/admin/:splat 301
 /wp-content/uploads/* /uploads/:splat 301
 /roser/* https://www.maxroser.com/roser/:splat 301
 /uploads/nvd3/* https://www.maxroser.com/owidUploads/nvd3/:splat 301
@@ -18,7 +18,7 @@
 /chart-builder/* /grapher/:splat 301
 /grapher/public/* /grapher/:splat 301
 /grapher/view/* /grapher/:splat 301
-/grapher/* https://owid-grapher.netlify.com/grapher/:splat 200
+/grapher/* https://mispytest-grapher.netlify.com/grapher/:splat 200
 /slides/* https://slides.ourworldindata.org/:splat 301
 /search q=:q https://google.com/search?sitesearch=ourworldindata.org&q=:q 302
 /fertility-rates/ https://ourworldindata.org/fertility-rate 301
