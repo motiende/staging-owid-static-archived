@@ -19,7 +19,6 @@
 /grapher/public/* /grapher/:splat 301
 /grapher/view/* /grapher/:splat 301
 /slides/* https://slides.ourworldindata.org/:splat 301
-/search q=:q https://google.com/search?sitesearch=ourworldindata.org&q=:q 302
 /fertility-rates/ https://ourworldindata.org/fertility-rate 301
 /inequality-between-world-citizens/ https://ourworldindata.org/global-economic-inequality 301
 /minorities-violence-racial-tolerance/ https://ourworldindata.org/treatment-of-minorities 301
