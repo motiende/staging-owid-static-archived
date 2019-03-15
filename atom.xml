@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>Our World in Data</title>
 <subtitle>Living conditions around the world are changing rapidly. Explore how and why.</subtitle>
-<id>https://mispytest-owid.netlify.com/</id>
-<link type="text/html" rel="alternate" href="https://mispytest-owid.netlify.com"/>
-<link type="application/atom+xml" rel="self" href="https://mispytest-owid.netlify.com/atom.xml"/>
+<id>https://mispytest.ourworldindata.org/</id>
+<link type="text/html" rel="alternate" href="https://mispytest.ourworldindata.org"/>
+<link type="application/atom+xml" rel="self" href="https://mispytest.ourworldindata.org/atom.xml"/>
 <updated>2018-12-04T16:21:06.000Z</updated>
 <entry>
     <title><![CDATA[Who emits more than their share of CO₂ emissions?]]></title>
-    <id>https://mispytest-owid.netlify.com/share-co2-emissions</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/share-co2-emissions"/>
+    <id>https://mispytest.ourworldindata.org/share-co2-emissions</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/share-co2-emissions"/>
     <published>2018-12-04T16:21:06.000Z</published>
     <updated>2018-12-14T14:32:48.000Z</updated>
     <author><name>Hannah Ritchie</name></author>
@@ -17,8 +17,8 @@
 </entry>
 <entry>
     <title><![CDATA[Global inequalities in CO₂ emissions, based on consumption]]></title>
-    <id>https://mispytest-owid.netlify.com/global-inequalities-co2-consumption</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/global-inequalities-co2-consumption"/>
+    <id>https://mispytest.ourworldindata.org/global-inequalities-co2-consumption</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/global-inequalities-co2-consumption"/>
     <published>2018-12-04T16:20:51.000Z</published>
     <updated>2018-12-14T14:46:53.000Z</updated>
     <author><name>Hannah Ritchie</name></author>
@@ -26,8 +26,8 @@
 </entry>
 <entry>
     <title><![CDATA[Is income inequality rising around the world?]]></title>
-    <id>https://mispytest-owid.netlify.com/income-inequality-since-1990</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/income-inequality-since-1990"/>
+    <id>https://mispytest.ourworldindata.org/income-inequality-since-1990</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/income-inequality-since-1990"/>
     <published>2018-11-19T10:00:46.000Z</published>
     <updated>2018-11-26T13:51:07.000Z</updated>
     <author><name>Joe Hasell</name></author>
@@ -35,8 +35,8 @@
 </entry>
 <entry>
     <title><![CDATA[Can the world eradicate another disease?]]></title>
-    <id>https://mispytest-owid.netlify.com/can-the-world-eradicate-another-disease</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/can-the-world-eradicate-another-disease"/>
+    <id>https://mispytest.ourworldindata.org/can-the-world-eradicate-another-disease</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/can-the-world-eradicate-another-disease"/>
     <published>2018-11-08T10:12:54.000Z</published>
     <updated>2018-11-08T14:47:49.000Z</updated>
     <author><name>Sophie Ochmann</name></author>
@@ -44,8 +44,8 @@
 </entry>
 <entry>
     <title><![CDATA[What makes a disease eradicable?]]></title>
-    <id>https://mispytest-owid.netlify.com/what-makes-a-disease-eradicable</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/what-makes-a-disease-eradicable"/>
+    <id>https://mispytest.ourworldindata.org/what-makes-a-disease-eradicable</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/what-makes-a-disease-eradicable"/>
     <published>2018-11-05T14:30:50.000Z</published>
     <updated>2018-11-05T14:38:33.000Z</updated>
     <author><name>Sophie Ochmann</name></author>
@@ -53,8 +53,8 @@
 </entry>
 <entry>
     <title><![CDATA[We've updated our entry on Trade and Globalization]]></title>
-    <id>https://mispytest-owid.netlify.com/weve-updated-our-entry-on-trade-and-globalization</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/weve-updated-our-entry-on-trade-and-globalization"/>
+    <id>https://mispytest.ourworldindata.org/weve-updated-our-entry-on-trade-and-globalization</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/weve-updated-our-entry-on-trade-and-globalization"/>
     <published>2018-11-01T18:02:08.000Z</published>
     <updated>2018-11-01T23:17:40.000Z</updated>
     <author><name>Esteban Ortiz-Ospina</name></author>
@@ -62,8 +62,8 @@
 </entry>
 <entry>
     <title><![CDATA[The world is much better; The world is awful; The world can be much better]]></title>
-    <id>https://mispytest-owid.netlify.com/much-better-awful-can-be-better</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/much-better-awful-can-be-better"/>
+    <id>https://mispytest.ourworldindata.org/much-better-awful-can-be-better</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/much-better-awful-can-be-better"/>
     <published>2018-10-31T01:42:44.000Z</published>
     <updated>2018-10-31T20:55:10.000Z</updated>
     <author><name>Max Roser</name></author>
@@ -71,8 +71,8 @@
 </entry>
 <entry>
     <title><![CDATA[From commonplace to rarer tragedy - declining child mortality across the world]]></title>
-    <id>https://mispytest-owid.netlify.com/child-mortality-global-overview</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/child-mortality-global-overview"/>
+    <id>https://mispytest.ourworldindata.org/child-mortality-global-overview</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/child-mortality-global-overview"/>
     <published>2018-10-29T13:00:08.000Z</published>
     <updated>2018-11-01T15:47:33.000Z</updated>
     <author><name>Hannah Ritchie</name></author>
@@ -80,8 +80,8 @@
 </entry>
 <entry>
     <title><![CDATA[Is trade a major driver of income inequality?]]></title>
-    <id>https://mispytest-owid.netlify.com/trade-and-income-inequality</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/trade-and-income-inequality"/>
+    <id>https://mispytest.ourworldindata.org/trade-and-income-inequality</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/trade-and-income-inequality"/>
     <published>2018-10-22T07:27:02.000Z</published>
     <updated>2018-10-22T16:40:48.000Z</updated>
     <author><name>Esteban Ortiz-Ospina</name></author>
@@ -89,8 +89,8 @@
 </entry>
 <entry>
     <title><![CDATA[Does trade cause growth?]]></title>
-    <id>https://mispytest-owid.netlify.com/trade-and-econ-growth</id>
-    <link rel="alternate" href="https://mispytest-owid.netlify.com/trade-and-econ-growth"/>
+    <id>https://mispytest.ourworldindata.org/trade-and-econ-growth</id>
+    <link rel="alternate" href="https://mispytest.ourworldindata.org/trade-and-econ-growth"/>
     <published>2018-10-22T06:05:28.000Z</published>
     <updated>2018-12-13T14:50:56.000Z</updated>
     <author><name>Esteban Ortiz-Ospina</name></author>
