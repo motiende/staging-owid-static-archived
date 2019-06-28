@@ -4,7 +4,7 @@
         var link = document.createElement('link');
         link.type = 'text/css';
         link.rel = 'stylesheet';
-        link.href = 'https://mispytest.ourworldindata.org/assets/css/commons.css';
+        link.href = 'https://staging-owid.netlify.com/assets/css/commons.css';
         document.head.appendChild(link);
 
         var hasPolyfill = false;
@@ -27,12 +27,12 @@
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.onload = checkReady;
-        script.src = 'https://mispytest.ourworldindata.org/assets/js/commons.js';
+        script.src = 'https://staging-owid.netlify.com/assets/js/commons.js';
         document.head.appendChild(script);
 
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.onload = checkReady;
-        script.src = 'https://mispytest.ourworldindata.org/assets/js/owid.js';
+        script.src = 'https://staging-owid.netlify.com/assets/js/owid.js';
         document.head.appendChild(script);
     
