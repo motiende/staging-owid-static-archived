@@ -733,7 +733,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/vaccination</loc>
-        <lastmod>2019-02-05</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/technological-progress</loc>
@@ -781,7 +781,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/terrorism</loc>
-        <lastmod>2019-02-05</lastmod>
+        <lastmod>2019-06-28</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/ethnographic-and-archaeological-evidence-on-violent-deaths</loc>
@@ -913,7 +913,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/co2-and-other-greenhouse-gas-emissions</loc>
-        <lastmod>2019-06-13</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/coverage</loc>
@@ -1053,7 +1053,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/taxation</loc>
-        <lastmod>2019-06-05</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/corruption</loc>
@@ -1521,7 +1521,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/vaccine-preventable-diseases</loc>
-        <lastmod>2019-05-21</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/neurodevelopmental-disorders</loc>
@@ -1781,7 +1781,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/supporters</loc>
-        <lastmod>2019-06-27</lastmod>
+        <lastmod>2019-07-02</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/faqs</loc>
@@ -1801,7 +1801,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/economic-growth-since-1950</loc>
-        <lastmod>2019-06-26</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/estimates-of-the-number-of-missing-women-in-the-world</loc>
@@ -1873,11 +1873,19 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/democracy-health</loc>
-        <lastmod>2019-06-26</lastmod>
+        <lastmod>2019-06-28</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/protein-quality</loc>
         <lastmod>2019-06-24</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/how-i-use-our-world-in-data-in-my-work-as-a-medical-doctor</loc>
+        <lastmod>2019-07-03</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/how-use-owid-for-high-school-teaching</loc>
+        <lastmod>2019-07-04</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/suicide-rates-by-country</loc>
@@ -1961,7 +1969,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/life-expectancy</loc>
-        <lastmod>2019-03-11</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/maternal-mortality-rate-per-100000-live-births-around-the-world</loc>
@@ -2064,10 +2072,6 @@
         <lastmod>2018-03-15</lastmod>
     </url>
     <url>
-        <loc>https://staging-owid.netlify.com/grapher/total-incidences-of-terrorism-worldwide</loc>
-        <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
         <loc>https://staging-owid.netlify.com/grapher/fatalities-and-injuries-due-to-terrorism</loc>
         <lastmod>2018-03-15</lastmod>
     </url>
@@ -2077,7 +2081,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-airliner-hijackings-and-fatalities</loc>
-        <lastmod>2019-03-21</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/intercontinental-trade-per-capita-1500-1800</loc>
@@ -2345,7 +2349,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/world-population-since-10000-bce-ourworldindata-series</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-01</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/children-per-woman-UN</loc>
@@ -2405,7 +2409,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/gdp-vs-happiness</loc>
-        <lastmod>2019-06-14</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/1st-d</loc>
@@ -2645,7 +2649,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/total-tax-revenues-gdp</loc>
-        <lastmod>2019-05-28</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/composition-of-tax-revenues-regional</loc>
@@ -2669,11 +2673,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/taxes-on-goods-and-services-gdp</loc>
-        <lastmod>2019-05-28</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/country-level-taxes-vs-income</loc>
-        <lastmod>2019-05-28</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/tax-reduction-in-income-inequality</loc>
@@ -2773,7 +2777,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/country-level-government-spending-vs-income</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/central-vs-total-government-expenditure-gdp</loc>
@@ -2809,7 +2813,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/inequality-before-and-after-taxes-and-transfers-Thewissen-et-al-data</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/human-rights-score-vs-political-regime-type</loc>
@@ -2817,7 +2821,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/income-vs-type-of-political-regime</loc>
-        <lastmod>2018-04-03</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/child-mortality-vs-type-of-political-regime</loc>
@@ -2833,7 +2837,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/world-population-1750-2015-and-un-projection-until-2100</loc>
-        <lastmod>2018-08-10</lastmod>
+        <lastmod>2019-07-01</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-of-population-living-with-less-than-190-and-310-per-day</loc>
@@ -2861,7 +2865,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/world-population-by-world-regions-post-1820</loc>
-        <lastmod>2019-04-03</lastmod>
+        <lastmod>2019-07-01</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/diphtheria-tetanus-pertussis-dtp3-immunization-global</loc>
@@ -2997,7 +3001,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/gdp-per-capita-in-international-dollars-vs-price-levels-relative-to-us</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/higher-labour-productivity-and-price-levels-in-richer-and-poorer-countries</loc>
@@ -3021,7 +3025,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/perception-of-the-safety-of-vaccines-vs-vaccine-coverage</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-02</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-disagrees-vaccines-are-important-for-children-to-have</loc>
@@ -3053,7 +3057,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/co-emissions-per-capita-vs-gdp-per-capita-international-</loc>
-        <lastmod>2019-03-20</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/cumulative-co-emissions</loc>
@@ -3085,7 +3089,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/so-emissions-by-world-region-in-million-tonnes</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/health-protection-coverage</loc>
@@ -3101,15 +3105,15 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/death-rate-from-pm25-vs-pm25-concentration</loc>
-        <lastmod>2018-11-05</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/childhood-deaths-from-the-five-most-lethal-infectious-diseases-worldwide</loc>
-        <lastmod>2019-05-01</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
-        <loc>https://staging-owid.netlify.com/grapher/so-emissions-million-tonnes-per-year</loc>
-        <lastmod>2018-03-15</lastmod>
+        <loc>https://staging-owid.netlify.com/grapher/so-emissions-tonnes-per-year</loc>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/weekly-hours-dedicated-to-home-production-in-the-usa-by-women</loc>
@@ -3125,11 +3129,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/death-rate-from-particulate-pollution-vs-gdp-per-capita</loc>
-        <lastmod>2019-04-25</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/so-emissions-per-capita-tonnes-per-year</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/world-gdp-over-the-last-two-millennia</loc>
@@ -3149,7 +3153,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/national-poverty-lines-vs-gdp-per-capita</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/nominal-wages-consumer-prices-and-real-wages-in-the-uk-since-1750</loc>
@@ -3193,7 +3197,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/CO2-by-source</loc>
-        <lastmod>2018-10-04</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/lymphatic-filariasis-treated-population-and-population-that-requires-treatment-but-is-not-treated</loc>
@@ -3293,7 +3297,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/children-per-woman-by-gdp-per-capita</loc>
-        <lastmod>2018-04-03</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/installed-renewable-energy-capacity</loc>
@@ -3353,11 +3357,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/energy-use-per-capita-vs-gdp-per-capita</loc>
-        <lastmod>2019-01-01</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/fish-and-seafood-consumption-per-capita</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/fish-consumption-vs-gdp-per-capita</loc>
@@ -3381,7 +3385,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-of-the-population-with-access-to-electricity</loc>
-        <lastmod>2019-06-26</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/public-health-expenditure-share-GDP-OWID</loc>
@@ -3469,7 +3473,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/access-to-electricity-vs-gdp-per-capita</loc>
-        <lastmod>2018-12-17</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/oil-proved-reserves</loc>
@@ -3517,7 +3521,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/the-decline-of-child-mortality-by-level-of-prosperity-endpoints</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/primary-energy-consumption-by-region</loc>
@@ -3757,7 +3761,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/aquaculture-farmed-fish-production</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/public-opposition-to-nuclear-energy-production</loc>
@@ -3841,7 +3845,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/vaccination-coverage-DPT-by-level-of-prosperity</loc>
-        <lastmod>2018-12-17</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/vaccination-coverage-DPT-by-extreme-poverty</loc>
@@ -3881,7 +3885,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-of-men-who-are-smoking-by-level-of-prosperity</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-tourists-outbound-vs-level-of-prosperity-of-the-home-country</loc>
@@ -4421,7 +4425,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/hidden-hunger-index-vs-gdp-per-capita</loc>
-        <lastmod>2018-04-03</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/prevalence-of-anemia-in-women-of-reproductive-age-vs-gdp-per-capita</loc>
@@ -4641,7 +4645,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/capture-fishery-production</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/tractors-per-100-square-kilometres-of-arable-land</loc>
@@ -4657,7 +4661,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/population-density-vs-prosperity</loc>
-        <lastmod>2018-12-19</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/world-population-projections-by-un-prospects-revision</loc>
@@ -4681,7 +4685,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/meat-production-tonnes</loc>
-        <lastmod>2019-03-12</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/global-meat-production-by-livestock-type</loc>
@@ -4689,19 +4693,19 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/beef-and-buffalo-meat-production-tonnes</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/poultry-production-tonnes</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/pigmeat-production-tonnes</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/milk-production-tonnes</loc>
-        <lastmod>2018-12-10</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/cattle-livestock-count-heads</loc>
@@ -4737,7 +4741,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/seafood-and-fish-production-thousand-tonnes</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/per-capita-meat-consumption-by-type-kilograms-per-year</loc>
@@ -4797,7 +4801,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-of-consumer-expenditure-spent-on-food-vs-gdp-per-capita</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/annual-food-expenditure-per-person-vs-gdp-per-capita</loc>
@@ -5005,11 +5009,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/global-fatalities-from-aviation-accidents-and-hijackings</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/fatal-airliner-accidents</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-05</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-air-transport-passengers-carried</loc>
@@ -5129,11 +5133,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/total-fertilizer-production-by-nutrient-tonnes</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/pesticide-use-tonnes</loc>
-        <lastmod>2018-03-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/primary-schooling-adjusted-net-attendance-rate</loc>
@@ -5841,7 +5845,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/global-hunger-index-vs-gdp-per-capita</loc>
-        <lastmod>2018-12-20</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/coal-consumption-by-region</loc>
@@ -6145,15 +6149,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/indoor-pollution-death-rates-clean-fuels</loc>
-        <lastmod>2019-04-25</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/fatalities-from-terrorism</loc>
-        <lastmod>2019-06-20</lastmod>
-    </url>
-    <url>
-        <loc>https://staging-owid.netlify.com/grapher/number-of-terrorism-fatalities-by-region</loc>
-        <lastmod>2019-06-07</lastmod>
+        <lastmod>2019-06-28</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/injuries-from-terrorism</loc>
@@ -6161,7 +6161,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/terrorist-incidents</loc>
-        <lastmod>2018-11-22</lastmod>
+        <lastmod>2019-07-01</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/incidence-of-terrorism</loc>
@@ -6209,11 +6209,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/death-rates-from-indoor-air-pollution-vs-gdp-per-capita</loc>
-        <lastmod>2019-04-25</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/death-rates-from-indoor-air-pollution-vs-share-of-population-in-absolute-poverty</loc>
-        <lastmod>2019-04-25</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/access-to-clean-fuels-for-cooking-vs-gdp-per-capita</loc>
@@ -6241,7 +6241,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/annual-number-of-deaths-by-cause</loc>
-        <lastmod>2018-04-18</lastmod>
+        <lastmod>2019-07-04</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/age-standardized-death-rate-from-non-communicable-diseases</loc>
@@ -6641,7 +6641,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-deaths-from-road-injuries</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-of-agriculture-in-total-employment</loc>
@@ -6777,7 +6777,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/death-rates-from-disasters</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/marine-protected-areas</loc>
@@ -6793,7 +6793,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/deaths-conflict-terrorism-per-100000</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/fixed-broadband-subscriptions-per-100-people</loc>
@@ -6857,7 +6857,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/deaths-caused-by-vaccine-preventable-diseases</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/Deaths-caused-by-vaccine-preventable-diseases-over-time</loc>
@@ -7017,7 +7017,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-deaths-by-age-group</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/deaths-risk-factor-50-69years</loc>
@@ -7077,7 +7077,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/cancer-deaths-by-type</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/cancer-deaths-by-age</loc>
@@ -7101,7 +7101,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/dementia-related-deaths-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/dementia-death-rates</loc>
@@ -7133,7 +7133,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/diarrheal-disease-death-rates-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/drowning-deaths-by-age-group</loc>
@@ -7229,7 +7229,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/respiratory-disease-deaths-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/respiratory-disease-death-rate</loc>
@@ -7241,7 +7241,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/cardiovascular-disease-deaths-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/cardiovascular-disease-death-rates</loc>
@@ -7425,11 +7425,11 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/secondhand-smoke-deaths-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/smoking-deaths-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/death-rates-malaria</loc>
@@ -7501,7 +7501,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/tuberculosis-deaths-by-age</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/tuberculosis-death-rates</loc>
@@ -7702,10 +7702,6 @@
     <url>
         <loc>https://staging-owid.netlify.com/grapher/gender-gap-in-average-wages-2000-vs-2015</loc>
         <lastmod>2018-03-15</lastmod>
-    </url>
-    <url>
-        <loc>https://staging-owid.netlify.com/grapher/gdp-per-capita-vs-energy-use-per-capita</loc>
-        <lastmod>2019-01-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/annual-deaths-by-cause-2001</loc>
@@ -8201,7 +8197,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/population-by-country-gapminder+un</loc>
-        <lastmod>2019-04-03</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/deaths-from-substance-use-disorders</loc>
@@ -9853,7 +9849,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/annual-working-hours-per-persons-engaged</loc>
-        <lastmod>2018-03-25</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/historical-literacy-in-england-by-sex</loc>
@@ -9917,7 +9913,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-who-drank-on-5-or-more-days-by-income</loc>
-        <lastmod>2018-03-27</lastmod>
+        <lastmod>2019-07-05</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-who-drank-drank-usa</loc>
@@ -9965,7 +9961,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/gdppercapita-vs-annual-hours-worked</loc>
-        <lastmod>2019-01-03</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/merchandise-exports-by-destination</loc>
@@ -10517,7 +10513,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/road-traffic-deaths-sdgs</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-of-world-merchandise-trade-by-type-of-trade-percent</loc>
@@ -10729,7 +10725,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/life-expectancy-vs-gdp-per-capita</loc>
-        <lastmod>2019-06-18</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/child-mortality-rate-sdgs</loc>
@@ -10833,7 +10829,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-children-dying-from-diarrheal-diseases</loc>
-        <lastmod>2019-06-20</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/hours-per-week-spent-in-market-and-non-market-work-by-sex-united-states</loc>
@@ -10885,7 +10881,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/forest-area-km</loc>
-        <lastmod>2018-06-08</lastmod>
+        <lastmod>2019-07-07</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/incidence-and-prevalence-of-tuberculosis-by-who-and-ihme-data-sources</loc>
@@ -11449,7 +11445,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/deaths-by-age-group-stacked</loc>
-        <lastmod>2019-04-24</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/income-inequality-in-latin-america</loc>
@@ -12313,7 +12309,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/stunting-vs-level-of-prosperity-over-time-ihme</loc>
-        <lastmod>2018-11-15</lastmod>
+        <lastmod>2019-07-06</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/sugar-cane-production</loc>
@@ -12749,7 +12745,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/historical-and-projected-population-by-region</loc>
-        <lastmod>2019-04-03</lastmod>
+        <lastmod>2019-07-01</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/life-expectancy-vs-health-expenditure-per-capita</loc>
@@ -12873,7 +12869,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/projected-population-by-country</loc>
-        <lastmod>2019-04-16</lastmod>
+        <lastmod>2019-07-03</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/sex-ratio-at-birth-by-birth-order</loc>
@@ -13025,7 +13021,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/world-population-over-the-last-12000-years-and-un-projection-until-2100</loc>
-        <lastmod>2019-05-07</lastmod>
+        <lastmod>2019-07-01</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/hours-of-work-per-1000-lumen-hours</loc>
@@ -13065,7 +13061,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/child-deaths-by-source</loc>
-        <lastmod>2019-05-10</lastmod>
+        <lastmod>2019-07-08</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-infant-deaths</loc>
@@ -13309,7 +13305,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/life-expectancy-vs-political-regime</loc>
-        <lastmod>2019-06-05</lastmod>
+        <lastmod>2019-07-02</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/terrorist-attacks-by-region</loc>
@@ -13325,7 +13321,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/violent-deaths-in-conflicts-and-one-sided-violence-vs-terrorism-deaths</loc>
-        <lastmod>2019-06-07</lastmod>
+        <lastmod>2019-07-02</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/life-expectancy-vs-liberal-democracy-index</loc>
@@ -13362,10 +13358,6 @@
     <url>
         <loc>https://staging-owid.netlify.com/grapher/consumption-co2-per-capita</loc>
         <lastmod>2019-06-18</lastmod>
-    </url>
-    <url>
-        <loc>https://staging-owid.netlify.com/grapher/world-population-over-120000-years-by-region</loc>
-        <lastmod>2019-06-22</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/children-per-woman-un-compared-with-usa</loc>
@@ -13438,5 +13430,61 @@
     <url>
         <loc>https://staging-owid.netlify.com/grapher/share-who-trust-government</loc>
         <lastmod>2019-06-27</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/terrorism-deaths-rand-vs-gtd</loc>
+        <lastmod>2019-06-28</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/comparison-of-median-income-or-consumption-in-lis-and-povcalnet</loc>
+        <lastmod>2019-07-02</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/immunization-measles-vs-vaccine-safety</loc>
+        <lastmod>2019-07-02</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/trust-healthcare-vs-vaccine-safety</loc>
+        <lastmod>2019-07-02</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/child-mortality-gdp-per-capita</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/expected-years-of-schooling-vs-gdp-per-capita</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/literacy-rate-vs-gdp-per-capita</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/average-years-of-schooling-vs-gdp-per-capita</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/average-schooling-vs-expected-schooling</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/medical-doctors-per-1000-people-vs-gdp-per-capita</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/human-development-index-vs-gdp-per-capita</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/improved-drinking-water-vs-gdp-per-capita</loc>
+        <lastmod>2019-07-06</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/number-of-departures-per-1000</loc>
+        <lastmod>2019-07-08</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/number-of-departures-per-1000-people-vs-gdp-per-capita</loc>
+        <lastmod>2019-07-08</lastmod>
     </url>
 </urlset>

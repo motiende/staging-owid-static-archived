@@ -5,13 +5,31 @@
 <id>https://staging-owid.netlify.com/</id>
 <link type="text/html" rel="alternate" href="https://staging-owid.netlify.com"/>
 <link type="application/atom+xml" rel="self" href="https://staging-owid.netlify.com/atom.xml"/>
-<updated>2019-06-25T15:01:24.000Z</updated>
+<updated>2019-07-04T13:00:10.000Z</updated>
+<entry>
+    <title><![CDATA[How I use Our World in Data in my work as a high school teacher]]></title>
+    <id>https://staging-owid.netlify.com/how-use-owid-for-high-school-teaching</id>
+    <link rel="alternate" href="https://staging-owid.netlify.com/how-use-owid-for-high-school-teaching"/>
+    <published>2019-07-04T13:00:10.000Z</published>
+    <updated>2019-07-04T13:08:41.000Z</updated>
+    <author><name>Guest Post</name></author>
+    <summary><![CDATA[At Our World in Data we get lots of useful feedback from users: suggestions for topics we should cover, questions, and often feedback from policymakers, journalists, researchers and teachers who use us in their work.]]></summary>
+</entry>
+<entry>
+    <title><![CDATA[How I use Our World in Data in my work as a medical doctor]]></title>
+    <id>https://staging-owid.netlify.com/how-i-use-our-world-in-data-in-my-work-as-a-medical-doctor</id>
+    <link rel="alternate" href="https://staging-owid.netlify.com/how-i-use-our-world-in-data-in-my-work-as-a-medical-doctor"/>
+    <published>2019-07-03T13:32:39.000Z</published>
+    <updated>2019-07-03T17:10:45.000Z</updated>
+    <author><name>Guest Post</name></author>
+    <summary><![CDATA[]]></summary>
+</entry>
 <entry>
     <title><![CDATA[Which countries achieved economic growth? And why does it matter?]]></title>
     <id>https://staging-owid.netlify.com/economic-growth-since-1950</id>
     <link rel="alternate" href="https://staging-owid.netlify.com/economic-growth-since-1950"/>
     <published>2019-06-25T15:01:24.000Z</published>
-    <updated>2019-07-03T14:52:11.000Z</updated>
+    <updated>2019-07-03T09:22:12.000Z</updated>
     <author><name>Max Roser</name></author>
     <summary><![CDATA[South Koreans are on average 32-times richer than in 1950; Romanians 20-times; Chinese 16-times. Other countries stagnated and remained poor. We look at how incomes have changed around the world and why it matters.]]></summary>
 </entry>
@@ -20,7 +38,7 @@
     <id>https://staging-owid.netlify.com/democracy-health</id>
     <link rel="alternate" href="https://staging-owid.netlify.com/democracy-health"/>
     <published>2019-06-24T12:00:50.000Z</published>
-    <updated>2019-06-26T15:52:12.000Z</updated>
+    <updated>2019-06-28T14:01:49.000Z</updated>
     <author><name>Esteban Ortiz-Ospina</name></author>
     <summary><![CDATA[There is a cross-country correlation between democracy (elections, freedom of expression, equality before law etc.) and population health. We take a look at these correlations and whether there is good evidence to suggest causality.]]></summary>
 </entry>
@@ -77,23 +95,5 @@
     <updated>2019-05-27T13:38:22.000Z</updated>
     <author><name>Hannah Ritchie</name></author>
     <summary><![CDATA[The human population has been a young one for most of its history: high fertility rates and short lifespans mean children have accounted for a large share of the population. But the world is ageing: there are now more people older than 64 than younger than 5 years old. This marks a historic demographic change.]]></summary>
-</entry>
-<entry>
-    <title><![CDATA[As the world's poorest economies are stagnating half a billion are expected to be in extreme poverty in 2030]]></title>
-    <id>https://staging-owid.netlify.com/extreme-poverty-projections</id>
-    <link rel="alternate" href="https://staging-owid.netlify.com/extreme-poverty-projections"/>
-    <published>2019-05-06T11:00:48.000Z</published>
-    <updated>2019-05-31T14:18:28.000Z</updated>
-    <author><name>Max Roser</name></author>
-    <summary><![CDATA[The world has committed to ending extreme poverty by 2030. But projections suggest we're far off track: although global extreme poverty is expected to continue to fall, an estimated 500 million will still live in extreme poverty in 2030. ]]></summary>
-</entry>
-<entry>
-    <title><![CDATA[Top incomes: more women, but still very male-dominated]]></title>
-    <id>https://staging-owid.netlify.com/top-incomes-more-women-but-still-very-male-dominated</id>
-    <link rel="alternate" href="https://staging-owid.netlify.com/top-incomes-more-women-but-still-very-male-dominated"/>
-    <published>2019-04-29T10:10:15.000Z</published>
-    <updated>2019-04-29T10:13:30.000Z</updated>
-    <author><name>Joe Hasell</name></author>
-    <summary><![CDATA[How hard is it for women to make it to the top? Recent research using income tax data from a number of high-income countries casts light on this. Although improving, we see that women are still very under-represented at the top of the income distribution.]]></summary>
 </entry>
 </feed>

@@ -181,7 +181,7 @@
 /grapher/population-living-in-extreme-poverty-by-world-region /grapher/total-population-living-in-extreme-poverty-by-world-region 302
 /grapher/share-of-the-world-population-living-in-absolute-poverty /grapher/share-of-the-world-population-living-in-extreme-poverty 302
 /grapher/labor-productivity-per-hour-TED /grapher/labor-productivity-per-hour-PennWorldTable 302
-/grapher/so2-emissions-million-tonnes-by-country /grapher/so-emissions-million-tonnes-per-year 302
+/grapher/so2-emissions-million-tonnes-by-country /grapher/so-emissions-tonnes-per-year 302
 /grapher/weekly-hours-dedicated-to-home-production-in-the-usa-by-gender-and-demographic-group /grapher/weekly-hours-dedicated-to-home-production-in-the-usa-by-women 302
 /grapher/weekly-hours-dedicated-to-home-production-in-the-usa-by-employment-and-marital-status /grapher/weekly-hours-dedicated-to-home-production-in-the-usa-by-women 302
 /grapher/death-rate-vs-gdp /grapher/death-rate-from-particulate-pollution-vs-gdp-per-capita 302
@@ -218,7 +218,7 @@
 /grapher/global-co2-concentration-ppm /grapher/global-co-concentration-ppm 302
 /grapher/co2-emissions-per-capita /grapher/co-emissions-per-capita 302
 /grapher/so2-emissions-per-capita-tonnes-per-year /grapher/so-emissions-per-capita-tonnes-per-year 302
-/grapher/so2-emissions-million-tonnes-per-year /grapher/so-emissions-million-tonnes-per-year 302
+/grapher/so2-emissions-million-tonnes-per-year /grapher/so-emissions-tonnes-per-year 302
 /grapher/so2-emissions-by-world-region-in-million-tonnes /grapher/so-emissions-by-world-region-in-million-tonnes 302
 /grapher/happiness-vs-child-mortality /grapher/life-satisfaction-vs-child-mortality 302
 /grapher/co2-emissions-per-capita-vs-the-share-of-people-living-in-extreme-poverty /grapher/co-emissions-per-capita-vs-the-share-of-people-living-in-extreme-poverty 302
@@ -302,7 +302,6 @@
 /grapher/military-expenditure-by-country-in-thousands-of-1900-uk-pounds-1830-1913 /grapher/military-expenditure-by-country-in-thousands-of-1900-uk-pounds 302
 /grapher/military-expenditure-by-country-in-thousands-of-2000-us-dollars-1914-2007 /grapher/military-expenditure-by-country-in-thousands-of-2000-us-dollars 302
 /grapher/wages-in-the-manufacturing-sector-vs-several-food-prices-usa-1901-2002 /grapher/wages-in-the-manufacturing-sector-vs-several-food-prices-usa 302
-/grapher/total-incidences-of-terrorism-worldwide-1968-2009 /grapher/total-incidences-of-terrorism-worldwide 302
 /grapher/incidences-of-terrorism-by-country-1968-2009 /grapher/incidences-of-terrorism-by-country 302
 /grapher/future-population-projections-by-country-1970-2100 /grapher/future-population-projections-by-country 302
 /grapher/map-of-genocides-and-politicides-around-the-world-1955-2015 /grapher/map-of-genocides-and-politicides-around-the-world 302
@@ -760,3 +759,5 @@
 /grapher/coverage-of-eight-vaccines-sdgs /grapher/coverage-of-key-vaccines-sdgs 302
 /grapher/greenhouse-gas-emissions-coe-by-gas /grapher/greenhouse-gas-emissions-by-gas 302
 /grapher/mean-years-of-schooling-selected-countries /grapher/mean-years-of-schooling-long-run 302
+/grapher/so-emissions-million-tonnes-per-year /grapher/so-emissions-tonnes-per-year 302
+/grapher/number-of-departures /grapher/number-of-departures-per-1000 302
