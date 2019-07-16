@@ -721,7 +721,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/world-population-growth</loc>
-        <lastmod>2019-06-18</lastmod>
+        <lastmod>2019-07-12</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/future-population-growth</loc>
@@ -781,7 +781,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/terrorism</loc>
-        <lastmod>2019-06-28</lastmod>
+        <lastmod>2019-07-16</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/ethnographic-and-archaeological-evidence-on-violent-deaths</loc>
@@ -1077,7 +1077,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/war-and-peace</loc>
-        <lastmod>2019-06-07</lastmod>
+        <lastmod>2019-07-10</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/a-history-of-global-living-conditions-in-5-charts</loc>
@@ -1385,7 +1385,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/causes-of-death</loc>
-        <lastmod>2019-07-08</lastmod>
+        <lastmod>2019-04-24</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/six-facts-pay-gap</loc>
@@ -1565,7 +1565,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/teaching</loc>
-        <lastmod>2019-02-26</lastmod>
+        <lastmod>2019-07-15</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/max-un-slides</loc>
@@ -1845,7 +1845,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/jobs/full-stack-developer</loc>
-        <lastmod>2019-06-18</lastmod>
+        <lastmod>2019-07-14</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/population-aged-65-outnumber-children</loc>
@@ -1886,6 +1886,10 @@
     <url>
         <loc>https://staging-owid.netlify.com/how-use-owid-for-high-school-teaching</loc>
         <lastmod>2019-07-04</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/region-population-2100</loc>
+        <lastmod>2019-07-15</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/suicide-rates-by-country</loc>
@@ -8325,7 +8329,7 @@
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/maddison-data-gdp-per-capita-in-2011us-single-benchmark</loc>
-        <lastmod>2019-05-23</lastmod>
+        <lastmod>2019-07-10</lastmod>
     </url>
     <url>
         <loc>https://staging-owid.netlify.com/grapher/gdp-per-capita-from-the-world-bank-in-constant-2011-international-vs-gdp-per-capita-from-the-maddison-project-in-2011us-single-benchmarks</loc>
@@ -13486,5 +13490,13 @@
     <url>
         <loc>https://staging-owid.netlify.com/grapher/number-of-departures-per-1000-people-vs-gdp-per-capita</loc>
         <lastmod>2019-07-08</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/number-of-under-five-deaths-by-region-in-macedonias</loc>
+        <lastmod>2019-07-10</lastmod>
+    </url>
+    <url>
+        <loc>https://staging-owid.netlify.com/grapher/the-cost-of-inequality-inequality-and-growth-in-living-standards-among-rich-countries</loc>
+        <lastmod>2019-07-10</lastmod>
     </url>
 </urlset>
